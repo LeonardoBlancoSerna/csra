@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+<title>Tony's enhancements 1.22.3</title>
+</head>
+<body>
+<h1>Tonys Verbesserungen</h1>
+<p>Diese NVDA-Erweiterung enthält eine Reihe kleinerer Verbesserungen, von
+denen jede zu klein ist, um ein eigene NVDA-Erweiterung daraus zu machen.</p>
+<p>This add-on is compatible with NVDA version 2024.2 or later</p>
+<h2>Downloads</h2>
+<p>Please install the latest version from NVDA add-on store.</p>
+<h2>Erweiterte Tabellen-Navigationsbefehle</h2>
+<ul>
+<li>NVDA+Steuerung+Ziffer - springe zu Spalte 1, 2, 3 bis 10 in einer Tabelle.</li>
+<li>NVDA+Alt+Ziffer - springe zu Reihe 1, 2, 3 bis 10 in einer Tabelle.</li>
+</ul>
+<h2>Kopieren von Tabellen in die Zwischenablage</h2>
+<p>With the following shortcuts you can copy either the whole table or current
+row or current column in a formatted way, so that you can paste it as a
+table to rich text editors, such as Microsoft Word or WordPad.</p>
+<ul>
+<li>NVDA+Alt+T - shows popup menu with options to copy table or part of it.</li>
+</ul>
+<p>There are also separate scripts for copying tables, rows, columns and cells,
+but they don't have keyboard shortcuts assigned by default, custom keyboard
+shortcuts cfor them can be assigned in InputGestures dialog of NVDA.</p>
+<h2>Automatische Sprachumschaltung</h2>
+<p>Ermöglicht es, die Sprache der Sprachausgabe automatisch nach Zeichensatz
+umzuschalten. Reflektierende Ausdrücke für jede Sprache können im
+Einstellungsfenster für dieser NVDA-Erweiterung konfiguriert werden. Bitte
+vergewissern Sie sich, dass die Sprachausgabe alle Sprachen unterstützt, an
+denen Sie interessiert sind. Das Umschalten zwischen zwei lateinisch
+basierten Sprachen oder zwei Sprachen mit ähnlichen Zeichensätzen wird
+derzeit nicht unterstützt.</p>
+<h2>Befehle für die Schnellsuche</h2>
+<p>As of version v1.18, QuickSearch commands have been moved to <a href="https://github.com/mltony/nvda-indent-nav">IndentNav
+add-on</a>.</p>
+<h2>Unerwünschte "nicht ausgewählt"-Meldungen in NVDA unterdrücken</h2>
+<p>Angenommen, Sie haben einen Text in einem Text-Editor ausgewählt. Dann
+drücken Sie eine Taste, z. B. Pos1 oder Pfeiltaste nach oben, die Sie zu
+einem anderen Textbereich führen soll. NVDA würde "nicht ausgewählt"
+mitteilen und dann die frühere Auswahl mitteilen, was manchmal unpraktisch
+sein kann. Diese Funktion verhindert, dass NVDA in solchen Situationen den
+zuvor ausgewählten Text vorliest.</p>
+<h2>Dynamische Tastenkombinationen</h2>
+<p>Sie können bestimmte Tastenkombinationen dynamisch machen. Dies bedeutet,
+dass NVDA nach solch einer Tastenkombination das Fenster der aktuellen
+Anwendung auf Aktualisierungen prüft und die aktuelle Zeile vorliest, sofern
+sich diese Geändert hat. Dies kann z. B. die Tastenkombination springe zu
+Lesezeichen, springe zu einer bestimmten Zeile  in einem Editor sein.</p>
+<p>Das Format der dynamischen Tastenkürzel ist einfach. Jede Zeile enthält eine
+Regel in folgendem Format:
+<code>appName Tastendruck</code>
+Hier ist mit  "Anwendungsname" der Name der Anwendung gemeint, in welcher
+die Tastenkombination dynamisch gemacht werden soll. Mit * wird die
+Tastenkombination in allen Anwendungen dynamisch gemacht. Die
+"Tastenkombination" muss im NVDA-Format geschrieben werden. Beispiel:
+"control+alt+shift+pagedown" für Alt+Steuerung++UmschaltPfeil runter..</p>
+<p>Um den appName für die Anwendung herauszufinden, gehen Sie folgendermaßen
+vor:</p>
+<ol>
+<li>Wechseln Sie zur Anwendung.</li>
+<li>Öffnen Sie die NVDA Python-Konsole, indem Sie NVDA+Umschalt+Z drücken.</li>
+<li>Geben Sie <code>focus.appModule.appName</code> ein und drücken Sie die Eingabetaste.</li>
+<li>Drücken Sie F6, um zum Ausgabebereich zu gelangen, und suchen Sie den
+   Wert appName in der letzten Zeile.</li>
+</ol>
+<h2>Fenster ein- und ausblenden</h2>
+<p>As of version v1.18 show/hide commands have been moved to <a href="https://github.com/mltony/nvda-task-switcher">Task Switcher
+add-on</a>.</p>
+<h2>Signalisiere, wenn NVDA ausgelastet ist</h2>
+<p>Aktivieren Sie diese Option, wenn NVDA signalisieren soll, dass es
+beschäftigt ist. In diesem Fall gibt es nicht unbedingt ein Problem mit
+NVDA, zeigt dem Nutzer jedoch an, dass der nächste NVDA-Befehl nicht sofort
+ausgeführt wird.</p>
+<h2>Application Volume adjustment</h2>
+<p>This functionality has been merged into NVDA core and is available in NVDA
+v2024.3 or later.</p>
+<h2>Mute microphone</h2>
+<p>This add-on provides a command for switching the microphone. There is no
+gesture assigned to this command by default, you can assign a gesture in
+NVDA's "Input Gestures" dialog if needed.</p>
+<h2>Sound-Aufteilung</h2>
+<p>This functionality has been merged into NVDA core and is available in NVDA
+v2024.2 or later.</p>
+<h2>Verbesserte Maus-Funktionen</h2>
+<ul>
+<li>Alt+Nummernblock-Schrägstrich: Zeigt mit dem Mauszeiger auf das aktuelle
+  Objekt und führt darauf einen normalen Klick aus.</li>
+<li>Alt+Nummernblock-Stern: Zeigt mit dem Mauszeiger auf das aktuelle Objekt
+  und führt mit der Maustaste darauf einen Rechtsklick aus.</li>
+<li>Alt+Nummernblock-Entf: Zieht den Mauszeiger aus dem Weg in die linke obere
+  Ecke des Bildschirms. Dies kann nützlich sein, um unerwünschte
+  überlappende Fenster in bestimmten Anwendungen zu vermeiden.</li>
+</ul>
+<p>The functionality for mouse wheel scrolling has been merged into NVDA core
+and is available in NVDA v2024.3 or later.</p>
+<h2>Erkennung des Einfügemodus in Text-Editoren</h2>
+<p>Wenn diese Option aktiviert ist, gibt NVDA einen Signalton wieder, sobald
+der Einfügemodus in Text-Editoren erkannt wurde.</p>
+<h2>Zweimaligen Druck der Taste einfügen blockieren</h2>
+<p>Während der Nutzung von NVDA bewirkt das zweimalige Drücken der
+Einfügen-Taste hintereinander den Wechsel zwischen Einfügen und
+Überschreiben, sofern die aktuelle Anwendung dies unterstützt. Manchmal
+geschieht dies jedoch versehentlich und löst den Überschreibmodus aus. Da es
+sich um einen speziellen Tastenanschlag handelt, kann er in den
+Einstellungen nicht deaktiviert werden. Diese Erweiterung bietet eine
+Möglichkeit, diese Tastenkombination zu blockieren. Wenn der Doppeldruck
+blockiert ist, kann der Einfügemodus durch Drücken von NVDA+F2 und betätigen
+der Einfügen-Taste umgeschaltet werden.</p>
+<p>Diese Option ist standardmäßig ausgeshaltet und muss manuell in den
+Einstellungen aktiviert werden.</p>
+<h2>Blocking double Caps Lock keystroke</h2>
+<p>In NVDA, when Caps Lock is set as an NVDA key, pressing it twice in a row
+toggles between uppercase and lowercase input modes. However, this can
+sometimes cause unintentional switching between these modes. Since this
+key’s behavior is unique and cannot be disabled through settings, this
+add-on offers a method to block this specific keyboard shortcut. When the
+double Caps Lock key press is blocked, you can still switch between
+uppercase and lowercase input modes by pressing NVDA+F2 followed by the Caps
+Lock key.</p>
+<p>Diese Option ist standardmäßig ausgeshaltet und muss manuell in den
+Einstellungen aktiviert werden.</p>
+<h2>System-Priorität des NVDA-Prozesses</h2>
+<p>Dies ermöglicht es, die System-Priorität des NVDA-Prozesses zu erhöhen, was
+die Reaktionsfähigkeit von NVDA verbessern kann, insbesondere bei hoher
+CPU-Last.</p>
+<h2>Behebung eines Fehlers, bei dem der Fokus in der Taskleiste hängen bleibt, wenn man Windows+Zahl drückt</h2>
+<p>This feature has been removed as of version v1.18. If you need a more
+reliable task switching functionality, please consider using <a href="https://github.com/mltony/nvda-task-switcher">Task Switcher
+add-on</a>.</p>
+<p>[[!tag dev stable]]</p>
+</body>
+</html>

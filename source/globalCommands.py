@@ -186,6 +186,16 @@ class GlobalCommands(ScriptableObject):
 	"""Commands that are available at all times, regardless of the current focus."""
 
 	@script(
+		# Translators: Describes the command to analyze the screen using AI.
+		description=_("Analiza la pantalla actual usando Inteligencia Artificial para describir su contenido."),
+		category=SCRCAT_VISION,
+		gesture="kb:NVDA+shift+i",
+	)
+	def script_analyzeScreenIA(self, gesture):
+		import ia_handler
+		ia_handler.handler.analyze_screen()
+
+	@script(
 		description=_(
 			# Translators: Describes the Cycle audio ducking mode command.
 			"Cycles through audio ducking modes which determine when NVDA lowers the volume of other sounds",

@@ -543,6 +543,26 @@ schemaVersion = integer(min=0, default={latestSchemaVersion})
 	enabled = boolean(default=false)
 	warnOnLoad = boolean(default=true)
 	playToggleSounds = boolean(default=true)
+
+[IA]
+	# Selected AI provider for image description and text analysis.
+	# "local" uses a local Ollama instance.
+	provider = option("local", "gemini", "openai", default="local")
+	# API Key for Google Gemini
+	geminiKey = string(default="")
+	# API Key for OpenAI
+	openaiKey = string(default="")
+	# Local API endpoint (e.g., for Ollama)
+	localEndpoint = string(default="http://localhost:11434")
+	# Local model name to use (e.g., moondream, llama3.2-vision)
+	localModel = string(default="moondream")
+[upsampler]
+	enabled = boolean(default=false)
+	strength = integer(default=50, min=0, max=100)
+	treble = integer(default=50, min=0, max=100)
+	resonance = integer(default=50, min=0, max=100)
+	filter_strength = integer(default=50, min=0, max=100)
+	saturation = integer(default=50, min=0, max=100)
 """
 
 #: The configuration specification

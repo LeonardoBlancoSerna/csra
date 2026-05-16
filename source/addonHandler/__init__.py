@@ -72,8 +72,8 @@ __getattr__ = handleDeprecations(
 )
 
 MANIFEST_FILENAME = "manifest.ini"
-stateFilename = "addonsState.pickle"
-BUNDLE_MIMETYPE = "application/x-nvda-addon"
+stateFilename = "csra-addonsState.pickle"
+BUNDLE_MIMETYPE = "application/x-csra-addon"
 ADDON_PENDINGINSTALL_SUFFIX = ".pendingInstall"
 DELETEDIR_SUFFIX = ".delete"
 

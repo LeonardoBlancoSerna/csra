@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+<title>Tony's enhancements 1.22.3</title>
+</head>
+<body>
+<h1>Tony's enhancements</h1>
+<p>Cette extension contient un certain nombre de petites améliorations
+apportées au lecteur d'écran NVDA, chacune d'entre elles étant trop petite
+pour mériter une extension séparée.</p>
+<p>Cette extension est compatible avec NVDA version 2024.2 ou ultérieure</p>
+<h2>Téléchargements</h2>
+<p>Veuillez installer la dernière version depuis l'add-on store de NVDA.</p>
+<h2>Commandes de navigation améliorées dans les tableaux</h2>
+<ul>
+<li>NVDA+Contrôle+chiffre - aller à la 1ère/2ème/3ème/... 10ème colonne du
+  tableau.</li>
+<li>NVDA+Alt+chiffre - aller à la 1ère/2ème/3ème/... 10ème ligne du tableau.</li>
+</ul>
+<h2>Copier des tableaux dans le presse-papiers</h2>
+<p>Avec les raccourcis suivants, vous pouvez copier le tableau entier ou la
+ligne actuelle ou la colonne actuelle de manière formatée, afin que vous
+puissiez le coller comme un tableau dans un éditeurs de texte riches, tels
+que Microsoft Word ou WordPad.</p>
+<ul>
+<li>NVDA+Alt+T - Affiche le menu contextuel avec des options pour copier le
+  tableau ou une partie de celui-ci.</li>
+</ul>
+<p>Il existe également des scripts distincts pour la copie des tableaux, des
+lignes, des colonnes et des cellules, mais aucun raccourci clavier n'est
+assigné par défaut, des raccourcis clavier personnalisés peuvent leur être
+assignés dans le dialogue  Gestes de commandes de NVDA.</p>
+<h2>Commutation automatique de la langue</h2>
+<p>Permet de changer automatiquement la langue de votre synthétiseur par le jeu
+de caractères. lexpression régulière pour chaque langue peut être configurée
+dans la fenêtre Préférences pour cette extension. Veuillez vous assurer que
+votre synthétiseur prend en charge toutes les langues qui vous
+intéressent. La commutation entre deux langues latin ou deux langues dont
+les jeux de caractères sont similaires n'est pas pris en charge pour le
+moment.</p>
+<h2>Commandes de recherche rapide</h2>
+<p>À partir de la version v1.18, les commandes QuickSearch ont été déplacées
+vers <a href="https://github.com/mltony/nvda-indent-nav">l'extension IndentNav</a>.</p>
+<h2>Supprimer l'annonce "non sélectionné" indésirable de NVDA</h2>
+<p>Supposons que vous ayez un texte sélectionné dans les éditeurs de
+texte. Ensuite, vous appuyez sur une touche, comme Début, ou Flèche bas,
+qui est censée vous emmener dans une autre partie du document. NVDA
+annoncerait «non sélectionné» puis verbaliserait l'ancienne sélection, qui
+peut parfois être gênante. Cette fonction empêche NVDA de verbaliser le
+texte autrefois sélectionné dans des situations comme celle-ci.</p>
+<h2>Frappes dynamiques</h2>
+<p>Vous pouvez attribuer à certaines frappes des touches dynamiques. Après
+avoir exécuté une telle frappe, NVDA vérifiera s'il y a eu une mise à jour
+dans la fenêtre ayant actuellement le focus et si la ligne courante est mise
+à jour, NVDA la lira automatiquement. Par exemple, certaines frappes dans
+les éditeurs de texte doivent être marquées comme dynamiques, telles que
+Aller au signet, sauter à une autre ligne ainsi que les frappes de débogage,
+telles que pas à pas détaillé (step into)/pas à pas (step over).</p>
+<p>Le format du tableau de frappes dynamiques est simple : chaque ligne
+contient une règle au format suivant :
+<code>frappe appName</code>
+où <code>appName</code> est le nom de l'application où cette frappe est marquée comme
+dynamique (ou <code>*</code> pour être marquée dynamique dans toutes les applications),
+et <code>commande</code> est une frappe au format NVDA, par exemple,
+<code>control+alt+shift+pagedown</code>.</p>
+<p>Afin de comprendre appName pour votre application, faites ceci :</p>
+<ol>
+<li>Basculez sur votre application.</li>
+<li>Ouvrez la console NVDA Python en appuyant sur NVDA+Shift+Z.</li>
+<li>Tapez <code>focus.appModule.appName</code> et appuyez sur Entrée.</li>
+<li>Appuyez sur F6 pour accéder au volet de sortie et recherchez la valeur
+   appName dans la dernière ligne.</li>
+</ol>
+<h2>Affichage et masquage des fenêtres</h2>
+<p>À partir de la version v1.18, afficher/masquer les commandes ont été
+déplacées vers <a href="https://github.com/mltony/nvda-task-switcher">l'extension Task
+Switcher</a>.</p>
+<h2>Bip lorsque NVDA est occupé</h2>
+<p>Cochez cette option pour que NVDA fournisse un retour audio lorsque NVDA est
+occupé. Le fait que NVDA soit occupé n'indique pas nécessairement un
+problème avec NVDA, mais c'est plutôt un signal à l'utilisateur que les
+commandes NVDA ne seront pas traitées immédiatement.</p>
+<h2>Réglage du volume de l'application</h2>
+<p>Cette fonctionnalité a été fusionnée dans le noyau NVDA et est disponible
+dans NVDA v2024.3 ou version ultérieure.</p>
+<h2>Couper le microphone</h2>
+<p>Cette extension fournit une commande pour la commutation du
+microphone. Aucun geste n'est attribué à cette commande par défaut, vous
+pouvez attribuer un geste dans le dialogue "Gestes de commandes" de NVDA si
+nécessaire.</p>
+<h2>Séparation de l'audio</h2>
+<p>Cette fonctionnalité a été fusionnée dans le noyau NVDA et est disponible
+dans NVDA v2024.2 ou version ultérieure.</p>
+<h2>Fonctions améliorées de la souris</h2>
+<ul>
+<li>Alt+pavNumDivisé : Le curseur  du pointeur de la souris  à l'objet actuel
+  et cliquer avec lui.</li>
+<li>Alt+pavNumMultiplié : Le curseur  du pointeur de la souris  à l'objet
+  actuel et cliquer  avec le bouton droit de la souris.</li>
+<li>Alt+pavNum effacement : Déplacez le curseur de la souris à l'écart du coin
+  supérieur gauche de l'écran. Cela peut être utile pour empêcher le survol
+  indésirable sur Windows dans certaines applications.</li>
+</ul>
+<p>La fonctionnalité de défilement avec la molette de la souris a été fusionnée
+dans le noyau NVDA et est disponible dans NVDA v2024.3 ou version
+ultérieure.</p>
+<h2>Détection du mode insertion dans les éditeurs de texte</h2>
+<p>Si cette option est activée, NVDA bip lorsqu'il détecte le mode insertion
+dans les éditeurs de texte.</p>
+<h2>Blocage de la double frappe de la touche Insertion</h2>
+<p>Dans NVDA, le fait d'appuyer deux fois de suite sur la touche Insertion
+bascule le mode d'insertion dans les applications. Cependant, cela arrive
+parfois accidentellement et cela déclenche le mode insertion. Comme il
+s'agit d'une frappe spéciale, elle ne peut pas être désactivée dans les
+paramètres. Cette extension permet de bloquer ce raccourci clavier. Lorsque
+la double insertion est bloquée, le mode d'insertion peut toujours être
+basculé en appuyant sur NVDA+F2 puis sur Insertion.</p>
+<p>Cette option est désactivée par défaut et doit être activée dans les
+paramètres.</p>
+<h2>Blocage de la double frappe de la touche Verrouillage Majuscules</h2>
+<p>Dans NVDA, lorsque la touche verrouillage majuscules est défini comme touche
+NVDA, le fait d'appuyer deux fois de suite dans une rangée, bascule entre
+les modes de saisie majuscules et minuscules. Cependant, cela peut parfois
+entraîner un basculement involontaire entre ces modes. Étant donné que le
+comportement de cette touche est unique et ne peut pas être désactivé via
+les paramètres, cette extension propose une méthode pour bloquer ce
+raccourci clavier spécifique. Lorsque Un double appui sur la touche
+verrouillage majuscules  est bloquée, vous pouvez toujours basculer entre
+les modes de saisie majuscules et minuscules en appuyant sur NVDA+F2 suivi
+de la touche verrouillage majuscules.</p>
+<p>Cette option est désactivée par défaut et doit être activée dans les
+paramètres.</p>
+<h2>Priorité du processus de NVDA dans le système</h2>
+<p>Cela permet d'augmenter la priorité du processus de NVDA dans le système, ce
+qui pourrait améliorer la réactivité de NVDA, en particulier lorsque la
+charge du processeur est élevée.</p>
+<h2>Correction d'un bogue lorsque le focus est coincée dans la barre des tâches lorsque vous appuyez sur Windows+numéros</h2>
+<p>Cette fonctionnalité a été supprimée à partir de la version v1.18. Si vous
+avez besoin d'une fonctionnalité de changement de tâche plus fiable,
+envisagez d'utiliser <a href="https://github.com/mltony/nvda-task-switcher">l'extension Task
+Switcher</a>.</p>
+<p>[[!tag dev stable]]</p>
+</body>
+</html>

@@ -83,9 +83,9 @@ class SecureDesktopHandler:
 
 	SD_CONNECT_BLOCK_TIMEOUT: int = 1
 
-	_IPC_FILENAME = r"Local\NVDARemoteAccessSDHIPCFile"
+	_IPC_FILENAME = r"Local\CSRA ARTSDHIPCFile"
 	"""IPC filename"""
-	_IPC_EVENTNAME = r"Local\NVDARemoteAccessSDHIPCEvent"
+	_IPC_EVENTNAME = r"Local\CSRA ARTSDHIPCEvent"
 	"""IPC write event name"""
 	_IPC_MAXLEN = 64
 	"""

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+<title>Tony's enhancements 1.22.3</title>
+</head>
+<body>
+<h1>Tonijeva poboljšanja (Tony's Enhancements)</h1>
+<p>Ovaj dodatak sadrži mnoga mala poboljšanja NVDA čitača ekrana, a svako od
+tih poboljšanja je premaleno, da bi zaslužilo zaseban dodatak.</p>
+<p>This add-on is compatible with NVDA versions 2022.4 and 2024.1.</p>
+<h2>Downloads</h2>
+<p>Please install the latest version from NVDA add-on store.</p>
+<h2>Poboljšani prečaci za kretanje po tablicama</h2>
+<ul>
+<li>NVDA+kontrol+brojka – skoči na 1., 2., 3., … 10. stupac u tablici.</li>
+<li>NVDA+Alt+brojka – skoči na 1., 2., 3., … 10. redak u tablici.</li>
+</ul>
+<h2>Uklonjene naredbe za kretanje po tablicama</h2>
+<p>Sljedeće naredbe za kretanje po tablicama su uklonjene jer su integrirane u
+najnoviju verziju NVDA jezgre.</p>
+<ul>
+<li>Skoči na prvi/zadnji stupac u tablici.</li>
+<li>Skoči na prvi/zadnji redak u tablici.</li>
+<li>Čitaj trenutačni stupac u tablici prema dolje, počevši od trenutačne
+  ćelije.</li>
+<li>Čitaj trenutačni stupac u tablici prema dolje, počevši od trenutačne
+  ćelije.</li>
+<li>Čitaj trenutačni stupac u tablici prema dolje, počevši od trenutačne
+  ćelije.</li>
+<li>Čitaj trenutačni stupac u tablici prema dolje, počevši od trenutačne
+  ćelije.</li>
+</ul>
+<p>Note: To learn about NVDA's default gestures for these features, please
+refer to the NVDA user guide.</p>
+<h2>Copying tables to clipboard</h2>
+<p>With the following shortcuts you can copy either the whole table or current
+row or current column in a formatted way, so that you can paste it as a
+table to rich text editors, such as Microsoft Word or WordPad.  - NVDA+Alt+T
+- shows popup menu with options to copy table or part of it.  There are also
+separate scripts for copying tables, rows, columns and cells, but they don't
+have keyboard shortcuts assigned by default, custom keyboard shortcuts cfor
+them can be assigned in InputGestures dialog of NVDA.</p>
+<h2>Poboljšane naredbe za kretanje po riječima</h2>
+<p>As of version 1.8 this functionality has been moved to <a href="https://github.com/mltony/nvda-word-nav/">WordNav
+add-on</a>.</p>
+<h2>Automatic language switching</h2>
+<p>Allows to automatically switch the language of your synthesizer by character
+set. Refgular expression for every language can be configured in the
+preferences window for this add-on. Please make sure that your synthesizer
+supports all the languages you're interested in. Switching between two
+Latin-based languages or two languages whose character sets are similar is
+not supported at this time.</p>
+<h2>Quicksearch commands</h2>
+<p>You can have up to three slots for configurable regular expressions that you
+frequencly search for in editables. By default they are assigned to
+<code>PrintScreen</code>, <code>ScrollLock</code> and <code>Pause</code> buttons. You can perform forward
+search, or backward search by pressing <code>Shift</code> combined with these buttons.</p>
+<h2>Suppress unwanted 'unselected' speech from NVDA</h2>
+<p>Suppose you have some text selected in text editors. Then you press a key,
+such as Home, or UpArrow, that is supposed to take you to another part of
+the document. NVDA would announce 'unselected' and then speak the former
+selection, which can be inconvenient at times. This feature prevents NVDA
+from speaking formerly selected text in situations like this.</p>
+<h2>Dinamični tipkovnički prečaci</h2>
+<p>Moguće je dodijeliti dinamične tipkovničke prečace. Nakon izdavanja takvog
+prečaca, NVDA će provjeriti aktualiziranja trenutačno fokusiranog prozora i
+ako je redak aktualiziran, NVDA će to automatski izgovoriti. Na primjer,
+određeni prečaci u uređivačima teksta trebaju biti označeni kao dinamični,
+kao što je skok na zabilješku, skok na jedan drugi redak te prečaci za
+uklanjanja grešaka, kao što je ukoračiti/prijeći preko.</p>
+<p>Format tablice dinamičkih prečaca je jednostavan: svaki redak sadrži pravilo
+u sljedećem formatu:
+<code>appName keystroke</code>
+gdje je <code>appName</code> ime aplikacije u kojoj je ovaj prečac označen dinamičnim
+(ili <code>*</code> za označavanje dinamičnosti u svim aplikacijama), a <code>keystroke</code> je
+tipkovnički prečac u NVDA formatu, na primjer, <code>kontrol+alt+šift+stranica
+dolje</code>.</p>
+<p>In order to figure out appName for your application, do this:</p>
+<ol>
+<li>Switch to your application.</li>
+<li>Open NVDA Python Console by pressing NVDA+Shift+Z.</li>
+<li>Type <code>focus.appModule.appName</code> and hit enter.</li>
+<li>Press F6 to go to output pane and find appName value in the last line.</li>
+</ol>
+<h2>Showing and hiding windows</h2>
+<p>You can hide current window, and you can show all currently hidden
+windows. This might be useful if you use multiple windows in the same app
+(say Chrome) and you would like to rearrange them.  - NVDA+Shift+-: hide
+current window.  - NVDA+Shift+=: Show all currently closed windows.</p>
+<p>Please note, that if you quit NVDA while a window is hidden, there is
+currently no way to show it after NVDA is restarted.</p>
+<h2>Console enhancements</h2>
+<p>Previously this add-on included a number of console-related features. As of
+version 1.8, all console-related features have been moved to <a href="https://github.com/mltony/nvda-console-toolkit/">Console
+Toolkit
+add-on</a>. Specifically:</p>
+<ul>
+<li>Real-time console output - Beep on console updates - Enforce Control+V in
+consoles</li>
+</ul>
+<h2>Signaliziraj zvukom kad je NVDA zauzet</h2>
+<p>Označi ovu NVDA opciju za pružanje povratnih informacija zvukom kad je NVDA
+zauzet. Zauzetost NVDA čitača ne mora nužno značiti problem s NVDA-om, već
+je to signal korisniku, da se bilo koje NVDA naredbe neće odmah izvršiti.</p>
+<h2>Volume adjustment</h2>
+<p>Due to compatibility issues with the WASAPI added in NVDA-2023.2, the volume
+adjustment have been temporarily removed, but may be restored in the future.</p>
+<h2>Sound split</h2>
+<p>As of version 1.16 this functionality has been moved to <a href="https://github.com/opensourcesys/soundSplitter/">soundSplitter
+add-on</a> maintained by Luke.</p>
+<h2>Enhanced mouse functions</h2>
+<ul>
+<li>Alt+NumPadDivide: Point mouse cursor at current object and click it.</li>
+<li>Alt+NumPadMultiply: Point mouse cursor at current object and right mouse
+  button click on it.</li>
+<li>Alt+NumPadPlus/NumPadMinus: Point mouse cursor at current object and
+  scroll down/up. THis is useful for infinite scroll webpages and webpages
+  that load more content on scroll.</li>
+<li>Alt+NumPadDelete: Move mouse cursor out of the way to top left corner of
+  the screen. This can be useful to prevent unwanted hover over windows in
+  certain applications.</li>
+</ul>
+<h2>Detecting insert mode in text editors</h2>
+<p>If this option is enabled, NVDA will beep when it detects insert mode in
+text editors.</p>
+<h2>Blokiranje dvostrukog unosa tipkovničkog prečaca</h2>
+<p>U NVDA čitaču, uzastopnim dvostrukim pritiskom na tipku „Insert”, mijenja
+način umetanja u aplikacije. No, ponekad se to dogodi slučajno i pokreće
+modus za umetanje. Budući da je ovo zaseban tipkovnički prečac, on se ne
+može deaktivirati u postavkama. Ovaj dodatak omogućuje način blokiranja ovog
+tipkovničkog prečaca. Kad je dvostruko umetanje blokirano, modus umetanja
+može se mijenjati pritiskom na NVDA+F2, a zatim „Insert”.</p>
+<p>Ova je opcija standardno deaktivirana i mora se aktivirati u postavkama.</p>
+<h2>System priority of NVDA process</h2>
+<p>This allows to boost system priority of NVDA process, that might improve
+NVDA responsiveness, especially when CPU load is high.</p>
+<h2>Fixing a bug when focus gets stuck in the taskbar when pressing Windows+Numbers</h2>
+<p>There is a bug in Windows 10, and possibly in other versions. When switching
+between applications using Windows+number shortcut sometimes the focus gets
+stuck in the taskbar area instead of jumping to the window being switched
+to. Since trying to report this bug to Microsoft is hopeless, a workaround
+has been implemented in this add-on. The add-on detects this situation and
+plays a short low-pitch beep when this situation is detected, then the
+add-on fixes it automatically.</p>
+<p>[[!tag dev stable]]</p>
+</body>
+</html>

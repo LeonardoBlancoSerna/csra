@@ -1,0 +1,2 @@
+compilar CSRA para la Microsoft Store mediante [winapp(https://github.com/microsoft/winappCli)]
+dejamos la plantilla para compilar CSRA con WinAppCli, cumpliendo un sueño de NVDA, lleb´sndolo a la MS Store

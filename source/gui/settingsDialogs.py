@@ -1899,6 +1899,53 @@ class VoiceSettingsPanel(AutoSettingsMixin, SettingsPanel):
 		"""Take action when the autoLanguageSwitching checkbox is pressed."""
 		self.reportNotSupportedLanguageCombo.Enable(self.autoLanguageSwitchingCheckbox.IsChecked())
 
+		# Upsampler
+		# Translators: The label for a checkbox to enable upsampling.
+		self.upsamplerEnabledCheckbox = settingsSizerHelper.addItem(
+			wx.CheckBox(self, label=_("Enable audio upsampling (44kHz)")),
+		)
+		self.upsamplerEnabledCheckbox.SetValue(config.conf["upsampler"]["enabled"])
+		# Translators: The label for a slider to adjust upsampler strength.
+		self.upsamplerStrengthSlider = settingsSizerHelper.addLabeledControl(
+			_("Upsampler strength:"),
+			wx.Slider,
+			minValue=0,
+			maxValue=100,
+		)
+		self.upsamplerStrengthSlider.SetValue(config.conf["upsampler"]["strength"])
+		# Translators: The label for a slider to adjust upsampler treble.
+		self.upsamplerTrebleSlider = settingsSizerHelper.addLabeledControl(
+			_("Upsampler treble:"),
+			wx.Slider,
+			minValue=0,
+			maxValue=100,
+		)
+		self.upsamplerTrebleSlider.SetValue(config.conf["upsampler"]["treble"])
+		# Translators: The label for a slider to adjust upsampler body resonance.
+		self.upsamplerResonanceSlider = settingsSizerHelper.addLabeledControl(
+			_("Resonancia Corporal:"),
+			wx.Slider,
+			minValue=0,
+			maxValue=100,
+		)
+		self.upsamplerResonanceSlider.SetValue(config.conf["upsampler"]["resonance"])
+		# Translators: The label for a slider to adjust upsampler filter strength.
+		self.upsamplerFilterStrengthSlider = settingsSizerHelper.addLabeledControl(
+			_("Upsampler filter strength:"),
+			wx.Slider,
+			minValue=0,
+			maxValue=100,
+		)
+		self.upsamplerFilterStrengthSlider.SetValue(config.conf["upsampler"]["filter_strength"])
+		# Translators: The label for a slider to adjust upsampler saturation.
+		self.upsamplerSaturationSlider = settingsSizerHelper.addLabeledControl(
+			_("Upsampler saturation:"),
+			wx.Slider,
+			minValue=0,
+			maxValue=100,
+		)
+		self.upsamplerSaturationSlider.SetValue(config.conf["upsampler"]["saturation"])
+
 	def onSave(self):
 		AutoSettingsMixin.onSave(self)
 
@@ -1916,6 +1963,15 @@ class VoiceSettingsPanel(AutoSettingsMixin, SettingsPanel):
 		config.conf["speech"]["reportNormalizedForCharacterNavigation"] = (
 			self.reportNormalizedForCharacterNavigationCheckBox.IsChecked()
 		)
+
+		# Upsampler save
+		config.conf["upsampler"]["enabled"] = self.upsamplerEnabledCheckbox.IsChecked()
+		config.conf["upsampler"]["strength"] = self.upsamplerStrengthSlider.GetValue()
+		config.conf["upsampler"]["treble"] = self.upsamplerTrebleSlider.GetValue()
+		config.conf["upsampler"]["resonance"] = self.upsamplerResonanceSlider.GetValue()
+		config.conf["upsampler"]["filter_strength"] = self.upsamplerFilterStrengthSlider.GetValue()
+		config.conf["upsampler"]["saturation"] = self.upsamplerSaturationSlider.GetValue()
+
 		currentSymbolDictionaries = config.conf["speech"]["symbolDictionaries"]
 		config.conf["speech"]["symbolDictionaries"] = newSymbolDictionaries = [
 			d.name
@@ -6290,6 +6346,68 @@ NvdaSettingsDialogActiveConfigProfile = None
 NvdaSettingsDialogWindowHandle = None
 
 
+class IASettingsPanel(SettingsPanel):
+	# Translators: This is the label for the IA settings panel.
+	title = _("Inteligencia Artificial")
+
+	def makeSettings(self, settingsSizer):
+		sHelper = guiHelper.BoxSizerHelper(self, sizer=settingsSizer)
+
+		# Provider choice
+		# Translators: The label for the AI provider choice in settings.
+		providerLabel = _("Proveedor de &IA:")
+		providers = [
+			("local", _("Local (Ollama)")),
+			("gemini", _("Google Gemini")),
+			("openai", _("OpenAI")),
+		]
+		self.providerChoices = [p[1] for p in providers]
+		self.providerValues = [p[0] for p in providers]
+		self.providerList = sHelper.addLabeledControl(providerLabel, wx.Choice, choices=self.providerChoices)
+		current_provider = config.conf["IA"]["provider"]
+		try:
+			self.providerList.SetSelection(self.providerValues.index(current_provider))
+		except ValueError:
+			self.providerList.SetSelection(0)
+
+		# Local settings
+		localGroup = wx.StaticBoxSizer(wx.VERTICAL, self, label=_("Configuración Local (Ollama)"))
+		lgHelper = guiHelper.BoxSizerHelper(self, sizer=localGroup)
+		self.localEndpoint = lgHelper.addLabeledControl(
+			_("Endpoint &local:"),
+			wx.TextCtrl,
+			value=config.conf["IA"]["localEndpoint"],
+		)
+		self.localModel = lgHelper.addLabeledControl(
+			_("&Modelo local (ej: moondream):"),
+			wx.TextCtrl,
+			value=config.conf["IA"]["localModel"],
+		)
+		sHelper.addItem(localGroup)
+
+		# Cloud settings
+		cloudGroup = wx.StaticBoxSizer(wx.VERTICAL, self, label=_("Configuración en la Nube"))
+		cgHelper = guiHelper.BoxSizerHelper(self, sizer=cloudGroup)
+		self.geminiKey = cgHelper.addLabeledControl(
+			_("API Key de &Gemini:"),
+			wx.TextCtrl,
+			value=config.conf["IA"]["geminiKey"],
+		)
+		self.openaiKey = cgHelper.addLabeledControl(
+			_("API Key de &OpenAI:"),
+			wx.TextCtrl,
+			value=config.conf["IA"]["openaiKey"],
+		)
+		sHelper.addItem(cloudGroup)
+
+	def onSave(self):
+		config.conf["IA"]["provider"] = self.providerValues[self.providerList.GetSelection()]
+		config.conf["IA"]["localEndpoint"] = self.localEndpoint.GetValue()
+		config.conf["IA"]["localModel"] = self.localModel.GetValue()
+		config.conf["IA"]["geminiKey"] = self.geminiKey.GetValue()
+		config.conf["IA"]["openaiKey"] = self.openaiKey.GetValue()
+
+
 class NVDASettingsDialog(MultiCategorySettingsDialog):
 	# Translators: This is the label for the NVDA settings dialog.
 	title = _("NVDA Settings")
@@ -6311,6 +6429,7 @@ class NVDASettingsDialog(MultiCategorySettingsDialog):
 		MagnifierPanel,
 		MathSettingsPanel,
 		RemoteSettingsPanel,
+		IASettingsPanel,
 	]
 	# In secure mode, add-on update is disabled, so AddonStorePanel should not appear since it only contains
 	# add-on update related controls.

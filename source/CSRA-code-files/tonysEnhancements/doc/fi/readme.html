@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+<title>Tony's enhancements 1.22.3</title>
+</head>
+<body>
+<h1>Tonyn laajennukset</h1>
+<p>Tämä lisäosa sisältää useita pieniä NVDA-ruudunlukijan parannuksia, jotka
+ovat liian pieniä ansaitakseen erillisen lisäosan.</p>
+<p>Tämä lisäosa on yhteensopiva NVDA 2024.2:n tai sitä uudempien kanssa</p>
+<h2>Lataukset</h2>
+<p>Asenna uusin versio NVDA:n lisäosakaupasta.</p>
+<h2>Laajennetut taulukkonavigointikomennot</h2>
+<ul>
+<li>NVDA+Ctrl+numero: Siirrä taulukon
+  ensimmäiseen/toiseen/kolmanteen/... kymmenenteen sarakkeeseen.</li>
+<li>NVDA+Alt+numero: Siirrä taulukon
+  ensimmäiselle/toiselle/kolmannelle/... kymmenennelle riville.</li>
+</ul>
+<h2>Taulukoiden kopiointi leikepöydälle</h2>
+<p>Seuraavilla pikanäppäimillä voit kopioida muotoiltuna joko koko taulukon tai
+nykyisen rivin/sarakkeen, jotta voit liittää sen taulukkona
+rikastekstieditoreihin, kuten Microsoft Word tai WordPad.</p>
+<ul>
+<li>NVDA+Alt+T: Näyttää ponnahdusvalikon, jossa on vaihtoehdot taulukon tai
+  sen osan kopioimiseen.</li>
+</ul>
+<p>Taulukoiden, rivien, sarakkeiden ja solujen kopiointia varten on myös
+erilliset skriptit, mutta niille ei ole oletuksena määritetty
+pikanäppäimiä. Ne on mahdollista määrittää NVDA:n
+Näppäinkomennot-valintaikkunassa.</p>
+<h2>Automaattinen kielen vaihtaminen</h2>
+<p>Mahdollistaa puhesyntetisaattorin kielen vaihtamisen automaattisesti
+merkistön perusteella. Kielten säännölliset lausekkeet voidaan määrittää
+tämän lisäosan asetuksista. Varmista, että käyttämäsi syntetisaattori tukee
+kaikkia niitä kieliä, joista olet kiinnostunut. Kahden latinalaista tai
+samankaltaista merkistöä käyttävän kielen välillä vaihtaminen ei ole
+toistaiseksi mahdollista.</p>
+<h2>Pikahakukomennot</h2>
+<p>Pikahakukomennot on siirretty versiosta 1.18 alkaen
+<a href="https://github.com/mltony/nvda-indent-nav">Sisennysnavigointi-lisäosaan</a>.</p>
+<h2>Estä häiritsevät NVDA:n "ei valittu" -ilmoitukset</h2>
+<p>Oletetaan, että sinulla on tekstiä valittuna tekstieditorissa, ja painat
+sitten näppäintä, kuten Home tai Nuoli ylös, joka siirtää toiseen kohtaan
+asiakirjassa. NVDA sanoo tällöin "ei valittu" ja sen jälkeen valittuna
+olleen tekstin, mikä voi olla häiritsevää. Tämä toiminto estää NVDA:ta
+puhumasta tällaisissa tilanteissa valittuna ollutta tekstiä.</p>
+<h2>Dynaamiset näppäinkomennot</h2>
+<p>Voit määrittää tietyt näppäinpainallukset dynaamisiksi. Tällaisen
+näppäinpainalluksen jälkeen NVDA tarkistaa aktiivisena olevan ikkunan
+mahdollisten päivitysten varalta, ja jos rivi päivittyy, NVDA puhuu sen
+automaattisesti. Esimerkiksi tietyt tekstieditorien näppäinpainallukset
+tulee merkitä dynaamisiksi, kuten "siirry kirjanmerkkiin", "siirry toiselle
+riville" ja virheenkorjausnäppäimet, kuten siirrä kohdalle/siirrä ohi.</p>
+<p>Dynaamisten näppäinpainallusten taulukon muoto on yksinkertainen. Kukin rivi
+sisältää säännön seuraavassa muodossa:
+<code>sovellus näppäinpainallus</code>
+jossa <code>sovellus</code> on sen sovelluksen nimi, jonka näppäinpainallus merkitään
+dynaamiseksi (tai <code>*</code>, jolloin se merkitään dynaamiseksi kaikissa
+sovelluksissa), ja <code>näppäinpainallus</code> on näppäinpainallus NVDA:n
+ymmärtämässä muodossa, esim. <code>control+alt+shift+pagedown</code>.</p>
+<p>Selvitä sovelluksen nimi seuraavasti:</p>
+<ol>
+<li>Siirry sovellukseen.</li>
+<li>Avaa NVDA:n Python-konsoli painamalla NVDA+Vaihto+Z.</li>
+<li>Kirjoita <code>focus.appModule.appName</code> ja paina Enter.</li>
+<li>Siirry tulostusruutuun painamalla F6 ja etsi viimeiseltä riviltä appNamen
+   arvo.</li>
+</ol>
+<h2>Ikkunoiden näyttäminen ja piilottaminen</h2>
+<p>Näytä/Piilota-komennot on siirretty versiosta 1.18 alkaen <a href="https://github.com/mltony/nvda-task-switcher">Task Switcher
+-lisäosaan</a>.</p>
+<h2>Anna äänimerkki, kun NVDA on varattu</h2>
+<p>Valitse tämä vaihtoehto, jos haluat NVDA:n antavan äänipalautteen, kun se on
+varattu. NVDA:n varattuna oleminen ei välttämättä tarkoita ongelmaa, vaan se
+on merkki käyttäjälle siitä, että NVDA-komentoja ei käsitellä heti.</p>
+<h2>Sovellusten äänenvoimakkuuden muuttaminen</h2>
+<p>Tämä toiminnallisuus on sulautettu NVDA:n ytimeen, ja on käytettävissä
+versiossa 2024.3 tai sitä uudemmassa.</p>
+<h2>Mykistä mikrofoni</h2>
+<p>Tämä lisäosa tarjoaa komennon mikrofonin mykistämiseen ja mykistyksen
+poistamiseen. Sille ei ole oletusarvoisesti määritetty näppäinkomentoa,
+mutta voit tarvittaessa määrittää sellaisen NVDA:n
+"Näppäinkomennot"-valintaikkunassa.</p>
+<h2>Äänenjako</h2>
+<p>Tämä toiminnallisuus on sulautettu NVDA:n ytimeen, ja on käytettävissä
+versiossa 2024.2 tai sitä uudemmassa.</p>
+<h2>Laajennetut hiiritoiminnot</h2>
+<ul>
+<li>Alt+Laskinnäppäimistön jakomerkki: Osoita hiirikohdistin nykyiseen
+  objektiin ja napsauta sitä.</li>
+<li>Alt+Laskinnäppäimistön kertomerkki: Osoita hiirikohdistin nykyiseen
+  objektiin ja napsauta siinä hiiren oikeaa näppäintä.</li>
+<li>Alt+Laskinnäppäimistön Del: Siirrä hiirikohdistin näytön vasempaan
+  yläkulmaan. Tästä voi olla hyötyä, kun halutaan estää hiiren jääminen
+  ikkunoiden päälle tietyissä sovelluksissa.</li>
+</ul>
+<p>Hiiren rullan vieritystoiminnallisuus on sulautettu NVDA:n ytimeen, ja on
+käytettävissä versiossa 2024.3 tai sitä uudemmassa.</p>
+<h2>Lisäystilan havaitseminen tekstieditoreissa</h2>
+<p>Jos tämä asetus on käytössä, NVDA antaa äänimerkin, kun se havaitsee
+lisäystilan tekstieditoreissa.</p>
+<h2>Estä Insert-näppäimen kaksoispainallus</h2>
+<p>NVDA:ssa Insert-näppäimen painaminen kahdesti peräkkäin ottaa sovelluksissa
+käyttöön lisäystilan. Joskus se kuitenkin tapahtuu vahingossa. Koska tämä on
+erityinen näppäinpainallus, sitä ei voi poistaa käytöstä asetuksissa. Tämä
+lisäosa tarjoaa tavan tämän pikanäppäimen estämiseen. Kun Insertin
+kaksoispainallus on estetty, lisäystila voidaan ottaa käyttöön painamalla
+NVDA+F2 ja sitten Insert.</p>
+<p>Tämä asetus ei ole oletusarvoisesti käytössä, ja se on otettava käyttöön
+asetuksissa.</p>
+<h2>Estä Caps Lock -näppäimen kaksoispainallus</h2>
+<p>Kun Caps Lock on määritetty NVDA-näppäimeksi, sen painaminen kahdesti
+peräkkäin vaihtaa isojen ja pienten kirjainten välillä. Toisinaan se saattaa
+kuitenkin tapahtua vahingossa. Koska kyseessä on erikoisnäppäin eikä sitä
+voi poistaa käytöstä asetuksissa, tämä lisäosa tarjoaa menetelmän kyseisen
+näppäinpainalluksen estämiseen. Kun Caps Lockin kaksoispainallus on estetty,
+voit silti vaihtaa isojen ja pienten kirjainten välillä painamalla NVDA+F2
+ja sitten Caps Lock.</p>
+<p>Tämä asetus ei ole oletusarvoisesti käytössä, ja se on otettava käyttöön
+asetuksissa.</p>
+<h2>NVDA-prosessin järjestelmäprioriteetti</h2>
+<p>Tämä mahdollistaa NVDA-prosessin järjestelmäprioriteetin lisäämisen, mikä
+saattaa parantaa NVDA:n reagointia erityisesti suoritinta paljon
+kuormitettaessa.</p>
+<h2>Kohdistuksen jääminen jumiin tehtäväpalkkiin painettaessa Win+numero-pikanäppäintä</h2>
+<p>Tämä ominaisuus on poistettu versiosta 1.18 alkaen. Mikäli tarvitset
+luotettavampaa tehtävänvaihtotoiminnallisuutta, harkitse <a href="https://github.com/mltony/nvda-task-switcher">Task Switcher
+-lisäosan</a> käyttöä.</p>
+<p>[[!tag dev stable]]</p>
+</body>
+</html>

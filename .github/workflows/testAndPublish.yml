@@ -91,6 +91,20 @@ jobs:
         python-version: ${{ matrix.pythonVersion }}
         architecture: x86
         update-environment: false
+    - name: Install Rust toolchain
+      uses: dtolnay/rust-toolchain@stable
+      with:
+        targets: i686-pc-windows-msvc, x86_64-pc-windows-msvc
+    - name: Build CSRA ART Rust Core
+      run: |
+        cd source/csra_art_rust
+        cargo build --release --target i686-pc-windows-msvc
+        cp target/i686-pc-windows-msvc/release/csra_art_rust.dll ../csra_art_rust.dll
+    - name: Build nvdaHelper Rust Core
+      run: |
+        cd source/nvda_helper_rust
+        cargo build --release --target i686-pc-windows-msvc
+        cp target/i686-pc-windows-msvc/release/nvda_helper_rust.dll ../nvda_helper_rust.dll
     - name: Install the latest version of uv
       uses: astral-sh/setup-uv@v7
       with:

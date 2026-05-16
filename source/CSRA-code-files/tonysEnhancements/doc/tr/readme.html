@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+<title>Tony's enhancements 1.22.3</title>
+</head>
+<body>
+<h1>Tony'nin geliştirmeleri</h1>
+<p>Bu eklenti, NVDA ekran okuyucu için her biri ayrı bir eklentiyi hak
+etmeyecek kadar küçük olan bir dizi küçük iyileştirme içerir.</p>
+<p>Bu eklenti NVDA 2024.2 ve sonraki sürümlerle uyumludur</p>
+<h2>İndirin</h2>
+<p>Lütfen NVDA eklenti mağazasından en son sürümü yükleyin.</p>
+<h2>Geliştirilmiş tablo gezinme komutları</h2>
+<ul>
+<li>NVDA+Control+rakamlar - tablodaki 1./2./3./... 10. sütuna atlayın.</li>
+<li>NVDA+Alt+rakamlar - tabloda 1./2./3./... 10. sıraya atla.</li>
+</ul>
+<h2>Tabloları panoya kopyalama</h2>
+<p>Aşağıdaki kısayollarla, tablonun tamamını veya geçerli satırı veya geçerli
+sütunu biçimlendirilmiş bir şekilde kopyalayabilir, böylece Microsoft Word
+veya WordPad gibi zengin metin editörlerine tablo olarak
+yapıştırabilirsiniz.</p>
+<ul>
+<li>NVDA+Alt+T - tabloyu veya bir kısmını kopyalamak için seçenekler içeren
+  açılır menüyü gösterir.</li>
+</ul>
+<p>Tabloları, satırları, sütunları ve hücreleri kopyalamak için ayrı komutlar
+da vardır, ancak bunlara varsayılan olarak atanmış klavye kısayolları
+yoktur; bunlar için özel klavye kısayolları NVDA'nın Girdi Hareketleri
+iletişim kutusunda atanabilir.</p>
+<h2>Otomatik dil değiştirme</h2>
+<p>Sentezleyicinizin dilini karakter kümesine göre otomatik olarak
+değiştirmenize izin verir. Bu eklenti için tercihler penceresinde her dil
+için refgular ifade yapılandırılabilir. Lütfen sentezleyicinizin
+ilgilendiğiniz tüm dilleri desteklediğinden emin olun. Latin tabanlı iki dil
+veya karakter kümeleri benzer olan iki dil arasında geçiş şu anda
+desteklenmemektedir.</p>
+<h2>Hızlı arama komutları</h2>
+<p>Sürüm 1.18'den itibaren, Hızlı Arama komutları <a href="https://github.com/mltony/nvda-indent-nav">Girinti Dolaşımı
+eklentisine</a> taşınmıştır.</p>
+<h2>NVDA'dan gelen istenmeyen 'seçilmemiş' konuşmayı bastırın</h2>
+<p>Metin editörlerinde bazı metinlerin seçili olduğunu varsayalım. Ardından,
+sizi belgenin başka bir bölümüne götürmesi gereken Ana Sayfa veya Yukarı Ok
+gibi bir tuşa basarsınız. NVDA 'seçilmedi' duyurusunu yapar ve ardından eski
+seçimi söyler, bu bazen rahatsız edici olabilir. Bu özellik, NVDA'nın bu
+gibi durumlarda önceden seçilen metni konuşmasını engeller.</p>
+<h2>Dinamik kısayollar</h2>
+<p>Belirli tuş vuruşlarını dinamik olarak atayabilirsiniz. Böyle bir tuş vuruşu
+yaptıktan sonra, NVDA o anda odaklanılan pencerede herhangi bir güncelleme
+olup olmadığını kontrol edecek ve satır güncellenirse, NVDA bunu otomatik
+olarak söyleyecektir. Örneğin, metin düzenleyicilerdeki bazı tuş vuruşları
+dinamik olarak işaretlenmelidir, örneğin yer imine atla, başka bir satıra
+atla ve adım at/adım atma gibi hata ayıklama tuş vuruşları.</p>
+<p>Dinamik kısayol tuşları tablosunun formatı basittir: her satır aşağıdaki
+formatta bir kural içerir:
+<code>uygulamaAdı tuş vuruşu</code>
+burada "Uygulama adı", bahsi geçen kısayol tuşunun dinamik olarak
+işaretlendiği (veya "*" ile tüm uygulamalarda dinamik olarak işaretlendiği)
+uygulamanın adıdır ve "klavye kısayolu", NVDA biçiminde bir kısayoludur,
+örneğin, "control+alt+shift" +sayfa aşağı`.</p>
+<p>Uygulamanız için appName'i bulmak için şunu yapın:</p>
+<ol>
+<li>Uygulamanıza geçin.</li>
+<li>NVDA+Shift+Z tuşlarına basarak NVDA Python Konsolunu açın.</li>
+<li>Focus.appModule.appName yazın ve enter tuşuna basın.</li>
+<li>Çıktı bölmesine gitmek ve son satırda appName değerini bulmak için F6'ya
+   basın.</li>
+</ol>
+<h2>Pencereleri gösterme ve gizleme</h2>
+<p>Sürüm 1.18'den itibaren göster/gizle komutları <a href="https://github.com/mltony/nvda-task-switcher">Görev Değiştirici
+eklentisine</a> taşınmıştır.</p>
+<h2>NVDA meşgulken bip sesi</h2>
+<p>NVDA meşgul olduğunda NVDA'nın sesli geri bildirim sağlaması için bu
+seçeneği işaretleyin. NVDA'nın meşgul olması, mutlaka NVDA ile ilgili bir
+sorun olduğunu göstermez, bunun yerine, bu, kullanıcıya herhangi bir NVDA
+komutunun hemen çalıştıramayacağının bir işaretidir.</p>
+<h2>Uygulama Ses ayarı</h2>
+<p>Bu işlevsellik NVDA çekirdeğiyle birleştirilmiştir ve NVDA v2024.3 veya
+sonraki sürümlerinde mevcuttur.</p>
+<h2>Mikrofonu sessize al</h2>
+<p>Bu eklenti mikrofonu değiştirmek için bir komut sağlar. Varsayılan olarak bu
+komuta atanmış bir hareket yoktur, gerekirse NVDA'nın “Girdi Hareketleri”
+iletişim kutusunda bir hareket atayabilirsiniz.</p>
+<h2>Ses ayırıcı</h2>
+<p>Bu işlevsellik NVDA çekirdeğiyle birleştirilmiştir ve NVDA v2024.2 veya
+sonraki sürümlerinde mevcuttur.</p>
+<h2>Gelişmiş fare işlevleri</h2>
+<ul>
+<li>Alt+NumPad Bölü: Fare imlecini geçerli nesneye getirin ve tıklayın.</li>
+<li>Alt+NumPad Çarpı: Fare imlecini geçerli nesneye getirin ve farenin sağ
+  tuşuyla üzerine tıklayın.</li>
+<li>Alt+NumPad Sil: Fare imlecini ekranın sol üst köşesine doğru hareket
+  ettirin. Bu, belirli uygulamalarda istenmeyen pencerelerin üzerine gelmeyi
+  önlemek için yararlı olabilir.</li>
+</ul>
+<p>Fare tekerleği kaydırma işlevi NVDA çekirdeğiyle birleştirilmiştir ve NVDA
+v2024.3 veya sonraki sürümlerinde mevcuttur.</p>
+<h2>Metin editörlerinde ekleme modunu algılama</h2>
+<p>Bu seçenek etkinleştirilirse, NVDA metin editörlerinde ekleme modunu
+algıladığında bip sesi çıkarır.</p>
+<h2>Shift insert kısayolunu engelleme</h2>
+<p>NVDA'da İnsert tuşuna arka arkaya iki kez basmak uygulamalarda ekleme modunu
+değiştirir. Ancak bu durum bazen yanlışlıkla olabilir. Bu özel bir kısayol
+tuşu olduğundan, ayarlarda devre dışı bırakılamaz. Bu eklenti, bu klavye
+kısayolunu engellemenizi sağlar.</p>
+<p>Bu seçenek varsayılan olarak devre dışıdır ve ayarlarda
+etkinleştirilmelidir.</p>
+<h2>Büyük Harf Kilidi için çift tuş vuruşunu engelleme</h2>
+<p>NVDA'da, Büyük Harf Kilidi bir NVDA tuşu olarak ayarlandığında, bu tuşa art
+arda iki kez basıldığında büyük harf ve küçük harf giriş modları arasında
+geçiş yapılır. Ancak bu durum bazen bu modlar arasında istenmeden geçiş
+yapılmasına neden olabilir. Bu tuşun davranışı benzersiz olduğundan ve
+ayarlar aracılığıyla devre dışı bırakılamadığından, bu eklenti, bu özel
+klavye kısayolunu engellemeye yönelik bir yöntem sunar. Büyük Harf Kilidi
+tuşuna çift basılması engellendiğinde, NVDA+F2 tuşlarına ve ardından Büyük
+Harf Kilidi tuşuna basarak büyük ve küçük harf giriş modları arasında geçiş
+yapabilirsiniz.</p>
+<p>Bu seçenek varsayılan olarak devre dışıdır ve ayarlarda
+etkinleştirilmelidir.</p>
+<h2>NVDA işleminin sistem önceliği</h2>
+<p>Bu, özellikle CPU yükü yüksek olduğunda, NVDA yanıt verme hızını artırabilen
+NVDA işleminin sistem önceliğini artırmaya olanak tanır.</p>
+<h2>Windows+sayı tuşlarına basıldığında odak görev çubuğunda takılıp kaldığında oluşan bir hatayı düzeltme</h2>
+<p>Bu özellik v1.18 sürümünden itibaren kaldırılmıştır. Daha güvenilir bir
+görev değiştirme işlevine ihtiyacınız varsa lütfen <a href="https://github.com/mltony/nvda-task-switcher">Görev Değiştirici
+eklentisini</a> kullanmayı
+düşünün.</p>
+<p>[[!tag dev stable]]</p>
+</body>
+</html>

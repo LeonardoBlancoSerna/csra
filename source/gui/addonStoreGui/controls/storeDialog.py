@@ -32,6 +32,7 @@ from .actions import _MonoActionsContextMenu
 from .addonList import AddonVirtualList
 from .details import AddonDetails
 from .messageDialogs import _SafetyWarningDialog
+from .extraTools.mainPanel import ExtraToolsPanel
 
 
 class AddonStoreDialog(SettingsDialog):
@@ -116,6 +117,11 @@ class AddonStoreDialog(SettingsDialog):
 		)
 		splitViewSizer.Add(self.addonDetailsView, flag=wx.EXPAND, proportion=1)
 		self.bindHelpEvent("AddonStoreActions", self.addonDetailsView.actionsButton)
+
+		# CSRA: Herramientas adicionales integradas de addonPackager
+		self.extraToolsPanel = ExtraToolsPanel(self.addonListTabs)
+		# Translators: Tab title for extra tools in Add-on Store
+		self.addonListTabs.AddPage(self.extraToolsPanel, _("Herramientas Avanzadas"))
 
 		generalActions = guiHelper.ButtonHelper(wx.HORIZONTAL)
 		# Translators: The label for a button in add-ons Store dialog to install an external add-on.

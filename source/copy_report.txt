@@ -1,0 +1,295 @@
+NOT FOUND: __init_.py
+ALREADY EXISTS: __init__.py
+COPIED TO ROOT: __main__.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\__main__.py)
+COPIED TO ROOT: __meta__.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\__meta__.py)
+COPIED TO appModules: _binary.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\_binary.py)
+COPIED TO ROOT: _common.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\psutilEx\_common.py)
+COPIED TO ROOT: _compat.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\psutilEx\_compat.py)
+COPIED TO appModules: _deprecate.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\_deprecate.py)
+COPIED TO ROOT: _markupbase.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\_markupbase.py)
+COPIED TO appModules: _native_win.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\pymsgbox\_native_win.py)
+COPIED TO ROOT: _psaix.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\psutilEx\_psaix.py)
+COPIED TO ROOT: _psbsd.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\psutilEx\_psbsd.py)
+COPIED TO ROOT: _pslinux.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\psutilEx\_pslinux.py)
+COPIED TO ROOT: _psosx.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\psutilEx\_psosx.py)
+COPIED TO ROOT: _psposix.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\psutilEx\_psposix.py)
+COPIED TO ROOT: _pssunos.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\psutilEx\_pssunos.py)
+COPIED TO ROOT: _pswindows.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\psutilEx\_pswindows.py)
+COPIED TO appModules: _pyautogui_java.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\pyautogui\_pyautogui_java.py)
+COPIED TO appModules: _pyautogui_osx.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\pyautogui\_pyautogui_osx.py)
+COPIED TO appModules: _pyautogui_win.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\pyautogui\_pyautogui_win.py)
+COPIED TO appModules: _pyautogui_x11.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\pyautogui\_pyautogui_x11.py)
+COPIED TO appModules: _tkinter_finder.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\_tkinter_finder.py)
+COPIED TO appModules: _typing.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\_typing.py)
+COPIED TO appModules: _util.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\_util.py)
+COPIED TO appModules: _version.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\_version.py)
+COPIED TO ROOT: abbr.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\abbr.py)
+ALREADY EXISTS: absynth 5.py
+COPIED TO appModules: ad2.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\ad2.py)
+NOT FOUND: addonConfig.py
+NOT FOUND: addToClip.py
+COPIED TO ROOT: admonition.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\admonition.py)
+COPIED TO globalPlugins: ajustes.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\addonPackager\globalPlugins\addonPackager\ajustes.py)
+COPIED TO appModules: alertmodes.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\azaosc\alertmodes.py)
+NOT FOUND: appsVolume.py
+COPIED TO ROOT: attr_list.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\attr_list.py)
+COPIED TO ROOT: audio_segment.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pydubEx\audio_segment.py)
+NOT FOUND: audioCore.py
+NOT FOUND: audioManagerDialog.py
+NOT FOUND: audioUtils.py
+ALREADY EXISTS: azaosc.py
+COPIED TO appModules: base.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\reaper\base.py)
+COPIED TO appModules: BdfFontFile.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\BdfFontFile.py)
+NOT FOUND: beep.py
+ALREADY EXISTS: bitbridge.py
+COPIED TO appModules: blackhole.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\platform_utils\blackhole.py)
+COPIED TO ROOT: blockparser.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\blockparser.py)
+COPIED TO ROOT: blockprocessors.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\blockprocessors.py)
+COPIED TO appModules: BlpImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\BlpImagePlugin.py)
+NOT FOUND: bluetoothAudio.py
+COPIED TO appModules: BmpImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\BmpImagePlugin.py)
+NOT FOUND: browseMode.py
+NOT FOUND: browseModeUIAEx.py
+COPIED TO appModules: BufrStubImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\BufrStubImagePlugin.py)
+COPIED TO ROOT: buildVars.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\buildVars.py)
+COPIED TO ROOT: callbacks.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pycawEx\pycaw\callbacks.py)
+COPIED TO appModules: chanels.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\kontakt\chanels.py)
+COPIED TO appModules: clipboard.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\platform_utils\clipboard.py)
+COPIED TO ROOT: codehilite.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\codehilite.py)
+NOT FOUND: commands.py
+COPIED TO ROOT: constants.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pycawEx\pycaw\constants.py)
+COPIED TO appModules: ContainerIO.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ContainerIO.py)
+NOT FOUND: contextHelpEx.py
+ALREADY EXISTS: core.py
+COPIED TO appModules: createmodule.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\steevenslatedrummer5\modules\desktop\createmodule.py)
+COPIED TO appModules: CurImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\CurImagePlugin.py)
+COPIED TO appModules: cw.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\cw.py)
+COPIED TO appModules: DcxImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\DcxImagePlugin.py)
+COPIED TO appModules: DdsImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\DdsImagePlugin.py)
+COPIED TO ROOT: def_list.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\def_list.py)
+COPIED TO ROOT: depend.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pycawEx\pycaw\api\audioclient\depend.py)
+NOT FOUND: dialog.py
+NOT FOUND: documentBaseEx.py
+COPIED TO appModules: drummodule.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\steevenslatedrummer5\modules\desktop\drummodule.py)
+COPIED TO ROOT: effects.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pydubEx\effects.py)
+NOT FOUND: elementListDialog.py
+NOT FOUND: elementsList.py
+COPIED TO ROOT: entities.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\htmlEx\entities.py)
+COPIED TO appModules: EpsImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\EpsImagePlugin.py)
+ALREADY EXISTS: exceptions.py
+COPIED TO appModules: ExifTags.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ExifTags.py)
+NOT FOUND: extensions.py
+COPIED TO ROOT: extra.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\extra.py)
+COPIED TO appModules: ezdrummer.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\ezdrummer.py)
+ALREADY EXISTS: ezdrummer64.py
+COPIED TO appModules: ezmix.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\ezmix.py)
+COPIED TO appModules: features.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\features.py)
+COPIED TO ROOT: fenced_code.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\fenced_code.py)
+COPIED TO appModules: FitsImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\FitsImagePlugin.py)
+COPIED TO appModules: FliImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\FliImagePlugin.py)
+COPIED TO appModules: FontFile.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\FontFile.py)
+COPIED TO ROOT: footnotes.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\footnotes.py)
+COPIED TO appModules: FpxImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\FpxImagePlugin.py)
+COPIED TO appModules: FtexImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\FtexImagePlugin.py)
+COPIED TO appModules: GbrImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\GbrImagePlugin.py)
+COPIED TO appModules: GdImageFile.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\GdImageFile.py)
+NOT FOUND: generate.py
+COPIED TO ROOT: generators.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pydubEx\generators.py)
+NOT FOUND: gettextTools.py
+COPIED TO appModules: GifImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\GifImagePlugin.py)
+COPIED TO appModules: GimpGradientFile.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\GimpGradientFile.py)
+COPIED TO appModules: GimpPaletteFile.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\GimpPaletteFile.py)
+COPIED TO appModules: GribStubImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\GribStubImagePlugin.py)
+COPIED TO appModules: gtr.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\gtr.py)
+COPIED TO appModules: gtune.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\gtune\gtune.py)
+COPIED TO appModules: Hdf5StubImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\Hdf5StubImagePlugin.py)
+COPIED TO ROOT: htmlparser.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\htmlparser.py)
+COPIED TO appModules: IcnsImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\IcnsImagePlugin.py)
+COPIED TO appModules: IcoImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\IcoImagePlugin.py)
+COPIED TO appModules: idle.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\platform_utils\idle.py)
+COPIED TO appModules: igniteampsnadir.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\igniteampsnadir.py)
+COPIED TO appModules: Image.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\Image.py)
+COPIED TO appModules: ImageChops.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageChops.py)
+COPIED TO appModules: ImageCms.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageCms.py)
+COPIED TO appModules: ImageColor.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageColor.py)
+COPIED TO appModules: ImageDraw.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageDraw.py)
+COPIED TO appModules: ImageDraw2.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageDraw2.py)
+COPIED TO appModules: ImageEnhance.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageEnhance.py)
+COPIED TO appModules: ImageFile.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageFile.py)
+COPIED TO appModules: ImageFilter.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageFilter.py)
+COPIED TO appModules: ImageFont.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageFont.py)
+COPIED TO appModules: ImageGrab.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageGrab.py)
+COPIED TO appModules: ImageMath.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageMath.py)
+COPIED TO appModules: ImageMode.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageMode.py)
+COPIED TO appModules: ImageMorph.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageMorph.py)
+COPIED TO appModules: ImageOps.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageOps.py)
+COPIED TO appModules: ImagePalette.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImagePalette.py)
+COPIED TO appModules: ImagePath.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImagePath.py)
+COPIED TO appModules: ImageQt.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageQt.py)
+COPIED TO appModules: ImageSequence.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageSequence.py)
+COPIED TO appModules: ImageShow.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageShow.py)
+COPIED TO appModules: ImageStat.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageStat.py)
+COPIED TO appModules: ImageTk.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageTk.py)
+COPIED TO appModules: ImageTransform.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageTransform.py)
+COPIED TO appModules: ImageWin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImageWin.py)
+COPIED TO appModules: ImImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImImagePlugin.py)
+COPIED TO appModules: ImtImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\ImtImagePlugin.py)
+NOT FOUND: informationDialog.py
+COPIED TO ROOT: inlinepatterns.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\inlinepatterns.py)
+NOT FOUND: inputGesturesEx.py
+NOT FOUND: inputGesturesExPatches.py
+COPIED TO ROOT: installTasks.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\installTasks.py)
+COPIED TO appModules: IptcImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\IptcImagePlugin.py)
+COPIED TO appModules: itemlist.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\gtune\itemlist.py)
+COPIED TO appModules: Jpeg2KImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\Jpeg2KImagePlugin.py)
+COPIED TO appModules: JpegImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\JpegImagePlugin.py)
+COPIED TO appModules: JpegPresets.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\JpegPresets.py)
+NOT FOUND: keyboard.py
+COPIED TO globalPlugins: kill.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\addonPackager\globalPlugins\addonPackager\kill.py)
+COPIED TO appModules: kontakt.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\kontakt\kontakt.py)
+COPIED TO appModules: kontakt7.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\kontakt7\kontakt7.py)
+COPIED TO appModules: label.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\reaper\label.py)
+COPIED TO ROOT: legacy_attrs.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\legacy_attrs.py)
+COPIED TO ROOT: legacy_em.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\legacy_em.py)
+COPIED TO ROOT: logging_utils.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pydubEx\logging_utils.py)
+COPIED TO appModules: machine.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\machine.py)
+COPIED TO ROOT: magic.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pycawEx\pycaw\magic.py)
+COPIED TO globalPlugins: main.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\addonPackager\globalPlugins\addonPackager\main.py)
+COPIED TO appModules: mapmodule.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\steevenslatedrummer5\modules\desktop\mapmodule.py)
+COPIED TO ROOT: markdown2.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown2.py)
+COPIED TO appModules: McIdasImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\McIdasImagePlugin.py)
+COPIED TO ROOT: md_in_html.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\md_in_html.py)
+ALREADY EXISTS: melodyne.py
+COPIED TO appModules: menu.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\menu.py)
+NOT FOUND: messageBoxPatches.py
+NOT FOUND: messageDialogs.py
+NOT FOUND: messages.py
+COPIED TO ROOT: meta.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\meta.py)
+COPIED TO appModules: MicImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\MicImagePlugin.py)
+COPIED TO appModules: mixermodule.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\steevenslatedrummer5\modules\desktop\mixermodule.py)
+COPIED TO appModules: mouse.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\mouse.py)
+COPIED TO appModules: MpegImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\MpegImagePlugin.py)
+COPIED TO appModules: MpoImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\MpoImagePlugin.py)
+COPIED TO appModules: MspImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\MspImagePlugin.py)
+COPIED TO appModules: navobject.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\navobject.py)
+COPIED TO ROOT: negp_messages.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\shared\negp_messages.py)
+NOT FOUND: newSymbolsHandler.py
+COPIED TO appModules: ni.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\ni.py)
+COPIED TO ROOT: nl2br.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\nl2br.py)
+COPIED TO ROOT: ntsecuritycon.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\win32Ex\ntsecuritycon.py)
+NOT FOUND: numlock.py
+NOT FOUND: nvdaConfig.py
+NOT FOUND: nvdaInfos.py
+NOT FOUND: NVDAObjectsIAccessible.py
+NOT FOUND: NVDAObjectsUIA.py
+NOT FOUND: NVDAObjectsUIAChromium.py
+NOT FOUND: NVDAStrings.py
+COPIED TO appModules: ocr.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\ocr.py)
+COPIED TO appModules: ocrdictionnary.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\steevenslatedrummer5\ocrdictionnary.py)
+COPIED TO ROOT: onInstall.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\onInstall.py)
+COPIED TO appModules: overlay.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\reaper\overlay.py)
+COPIED TO appModules: PaletteFile.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PaletteFile.py)
+COPIED TO appModules: PalmImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PalmImagePlugin.py)
+COPIED TO ROOT: parser.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\htmlEx\parser.py)
+NOT FOUND: patchs.py
+COPIED TO appModules: pathlib.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\pathlib.py)
+COPIED TO appModules: paths.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\platform_utils\paths.py)
+COPIED TO appModules: PcdImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PcdImagePlugin.py)
+COPIED TO appModules: PcfFontFile.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PcfFontFile.py)
+COPIED TO appModules: PcxImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PcxImagePlugin.py)
+COPIED TO appModules: PdfImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PdfImagePlugin.py)
+COPIED TO appModules: PdfParser.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PdfParser.py)
+COPIED TO appModules: PixarImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PixarImagePlugin.py)
+COPIED TO ROOT: playback.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pydubEx\playback.py)
+COPIED TO appModules: PngImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PngImagePlugin.py)
+COPIED TO ROOT: postprocessors.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\postprocessors.py)
+COPIED TO appModules: PpmImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PpmImagePlugin.py)
+COPIED TO ROOT: preprocessors.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\preprocessors.py)
+COPIED TO appModules: process.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\platform_utils\process.py)
+COPIED TO appModules: PsdImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PsdImagePlugin.py)
+COPIED TO appModules: PSDraw.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PSDraw.py)
+COPIED TO appModules: psp.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\psp.py)
+NOT FOUND: py3Compatibility.py
+COPIED TO appModules: PyAccess.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\PyAccess.py)
+COPIED TO ROOT: pyaudioop.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pydubEx\pyaudioop.py)
+COPIED TO ROOT: pycaw.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pycawEx\pycaw\pycaw.py)
+NOT FOUND: pycawUtils.py
+COPIED TO appModules: QoiImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\QoiImagePlugin.py)
+NOT FOUND: quickAddonsActivation.py
+ALREADY EXISTS: reaper.py
+ALREADY EXISTS: reaper_host64.py
+ALREADY EXISTS: reaper-update.py
+COPIED TO appModules: report.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\report.py)
+COPIED TO appModules: routingmenu32.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\steevenslatedrummer5\routingmenu32.py)
+COPIED TO appModules: routingmenu36.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\steevenslatedrummer5\routingmenu36.py)
+NOT FOUND: runInThread.py
+COPIED TO ROOT: sane_lists.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\sane_lists.py)
+NOT FOUND: sayError.py
+COPIED TO ROOT: scipy_effects.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pydubEx\scipy_effects.py)
+COPIED TO appModules: screen.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\screen.py)
+NOT FOUND: scriptHandlerEx.py
+NOT FOUND: scriptInfos.py
+NOT FOUND: secure.py
+COPIED TO ROOT: serializers.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\serializers.py)
+COPIED TO appModules: sessiondrummer.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\sessiondrummer\sessiondrummer.py)
+NOT FOUND: settingsDialogsPatche.py
+COPIED TO appModules: sforzando.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\sforzando\sforzando.py)
+COPIED TO appModules: SgiImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\SgiImagePlugin.py)
+NOT FOUND: shutdown_gui.py
+NOT FOUND: shutdown_util.py
+COPIED TO ROOT: silence.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pydubEx\silence.py)
+COPIED TO ROOT: smarty.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\smarty.py)
+COPIED TO appModules: smp.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\smp.py)
+NOT FOUND: soundSplit.py
+NOT FOUND: specialForGmail.py
+NOT FOUND: speechEx.py
+NOT FOUND: speechHistoryPatches.py
+COPIED TO appModules: SpiderImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\SpiderImagePlugin.py)
+NOT FOUND: state.py
+COPIED TO appModules: stlthb.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\stlthb.py)
+COPIED TO ROOT: structures.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pycawEx\pycaw\api\mmdeviceapi\depend\structures.py)
+COPIED TO appModules: SunImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\SunImagePlugin.py)
+COPIED TO appModules: surge.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\surge\surge.py)
+NOT FOUND: symbols.py
+COPIED TO ROOT: tables.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\tables.py)
+COPIED TO appModules: tablist.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\sessiondrummer\tablist.py)
+COPIED TO appModules: tabs.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\kontakt\tabs.py)
+COPIED TO appModules: TarIO.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\TarIO.py)
+NOT FOUND: temporaryOutputDevice.py
+NOT FOUND: temporaryOutputDevicePatches.py
+COPIED TO ROOT: test_tools.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\test_tools.py)
+NOT FOUND: textAnalyzer.py
+NOT FOUND: textInfo.py
+COPIED TO appModules: TgaImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\TgaImagePlugin.py)
+NOT FOUND: theGlobalPlugin.py
+COPIED TO appModules: TiffImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\TiffImagePlugin.py)
+COPIED TO appModules: TiffTags.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\TiffTags.py)
+COPIED TO ROOT: toc.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\toc.py)
+NOT FOUND: tonesPatches.py
+COPIED TO ROOT: treeprocessors.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\treeprocessors.py)
+COPIED TO appModules: tunedictionnary.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\gtune\tunedictionnary.py)
+COPIED TO ROOT: txt2tags.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\txt2tags.py)
+NOT FOUND: UIAParagraph.py
+NOT FOUND: update_check.py
+NOT FOUND: user32.py
+NOT FOUND: userConfigManager.py
+COPIED TO ROOT: util.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\util.py)
+COPIED TO globalPlugins: utilidades.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\addonPackager\globalPlugins\addonPackager\utilidades.py)
+COPIED TO ROOT: utils.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\pycawEx\pycaw\utils.py)
+NOT FOUND: virtualBuffersEx.py
+NOT FOUND: volumeControlScripts.py
+COPIED TO appModules: vsco2.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\vsco2.py)
+COPIED TO appModules: WalImageFile.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\WalImageFile.py)
+NOT FOUND: waves.py
+COPIED TO appModules: WebPImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\WebPImagePlugin.py)
+COPIED TO ROOT: wikilinks.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\NVDAExtensionGlobalPlugin\utilities\markdownEx\markdown\extensions\wikilinks.py)
+COPIED TO appModules: windows.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\platform_utils\shell_integration\windows.py)
+COPIED TO appModules: WmfImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\WmfImagePlugin.py)
+COPIED TO appModules: XbmImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\XbmImagePlugin.py)
+COPIED TO appModules: xln.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\xln.py)
+COPIED TO appModules: XpmImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\XpmImagePlugin.py)
+COPIED TO appModules: XVThumbImagePlugin.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\api\PIL\XVThumbImagePlugin.py)
+COPIED TO appModules: zampler.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\sibiac\zampler.py)
+COPIED TO appModules: zonelist.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\steevenslatedrummer5\zonelist.py)
+COPIED TO appModules: zones.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\kontakt\zones.py)
+COPIED TO appModules: zoneslist.py (from C:\Users\USUARIO\Desktop\proyectos\repositorios\CSRA\source\CSRA-code-files\LBL\appModules\lbl\azaosc\zoneslist.py)

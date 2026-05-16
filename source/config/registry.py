@@ -9,9 +9,9 @@ import winreg
 from winBindings.advapi32 import RegDeleteTree
 
 
-EASE_OF_ACCESS_APP_KEY_NAME = "nvda_nvda_v1"
-NVDA_ADDON_PROG_ID = "NVDA.Addon.1"
-ADDON_BUNDLE_EXTENSION = "nvda-addon"
+EASE_OF_ACCESS_APP_KEY_NAME = "csra_csra_v1"
+NVDA_ADDON_PROG_ID = "CSRA.Addon.1"
+ADDON_BUNDLE_EXTENSION = "csra-addon"
 
 
 class RegistryKey(str, Enum):
@@ -22,10 +22,10 @@ class RegistryKey(str, Enum):
 	this will evaluate to `r"SOFTWARE\WOW6432Node"`
 	"""
 	CURRENT_VERSION = rf"{_SOFTWARE}\Microsoft\Windows\CurrentVersion"
-	INSTALLED_COPY = rf"{CURRENT_VERSION}\Uninstall\NVDA"
+	INSTALLED_COPY = rf"{CURRENT_VERSION}\Uninstall\CSRA"
 	RUN = rf"{CURRENT_VERSION}\Run"
-	NVDA = rf"{_SOFTWARE}\NVDA"
-	APP_PATH = rf"{CURRENT_VERSION}\App Paths\nvda.exe"
+	NVDA = rf"{_SOFTWARE}\CSRA"
+	APP_PATH = rf"{CURRENT_VERSION}\App Paths\csra.exe"
 	EXPLORER_ADVANCED = rf"{CURRENT_VERSION}\Explorer\Advanced"
 	SYSTEM_POLICIES = rf"{CURRENT_VERSION}\Policies\System"
 	NT_CURRENT_VERSION = rf"{_SOFTWARE}\Microsoft\Windows NT\CurrentVersion"
@@ -36,7 +36,7 @@ class RegistryKey(str, Enum):
 	EASE_OF_ACCESS_APP = rf"{EASE_OF_ACCESS}\ATs\{EASE_OF_ACCESS_APP_KEY_NAME}"
 	ADDON_PROG = rf"{_SOFTWARE}\Classes\{NVDA_ADDON_PROG_ID}"
 	ADDON_EXT = rf"{_SOFTWARE}\Classes\.{ADDON_BUNDLE_EXTENSION}"
-	REMOTE_URL_HANDLER = rf"{_SOFTWARE}\Classes\nvdaremote"
+	REMOTE_URL_HANDLER = rf"{_SOFTWARE}\Classes\csra-remote"
 
 	# Sub keys
 

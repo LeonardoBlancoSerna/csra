@@ -39,6 +39,7 @@ from speech.commands import BreakCommand
 from synthDriverHandler import pre_synthSpeak
 from utils import _deprecate
 from winBindings.mmeapi import WAVEFORMATEX as _WAVEFORMATEX
+from upsampler import Upsampler
 
 __getattr__ = _deprecate.handleDeprecations(
 	_deprecate.MovedSymbol(
@@ -225,13 +226,24 @@ class WavePlayer(garbageHandler.TrackedObject):
 		self.channels = channels
 		self.samplesPerSec = samplesPerSec
 		self.bitsPerSample = bitsPerSample
+
+		self._upsampler = None
+		# Only enable upsampler for speech and low sample rate audio (< 44.1kHz)
+		if config.conf["upsampler"]["enabled"] and purpose == AudioPurpose.SPEECH and samplesPerSec < 44100:
+			self._upsampler = Upsampler()
+			# Sync upsampler parameters from config
+			for param in ["strength", "treble", "resonance", "filter_strength", "saturation"]:
+				self._upsampler.set_param(param, config.conf["upsampler"][param])
+			# Upsampler does 4x oversampling
+			self.samplesPerSec *= 4
+
 		format = self._format = _WAVEFORMATEX()
 		format.wFormatTag = WAVE_FORMAT_PCM
 		format.nChannels = channels
-		format.nSamplesPerSec = samplesPerSec
+		format.nSamplesPerSec = self.samplesPerSec
 		format.wBitsPerSample = bitsPerSample
 		format.nBlockAlign: int = bitsPerSample // 8 * channels
-		format.nAvgBytesPerSec = samplesPerSec * format.nBlockAlign
+		format.nAvgBytesPerSec = self.samplesPerSec * format.nBlockAlign
 		self._audioDucker = None
 		if wantDucking:
 			import audioDucking
@@ -341,6 +353,11 @@ class WavePlayer(garbageHandler.TrackedObject):
 			self.startTrimmingLeadingSilence(False)
 		if not isinstance(data, bytes):
 			data = string_at(data, size)
+		
+		if self._upsampler:
+			data = self._upsampler.process(data)
+			size = len(data)
+
 		try:
 			wasapi.wasPlay_feed(
 				self._player,

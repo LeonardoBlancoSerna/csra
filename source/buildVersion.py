@@ -62,15 +62,15 @@ def formatVersionForGUI(year, major, minor):
 
 
 # Version information for NVDA
-name = "NVDA"
+name = "CSRA"
 version_year = 2026
-version_major = 2
+version_major = 1
 version_minor = 0
 version_build = 0  # Should not be set manually. Set in 'sconscript'.
 version = _formatDevVersionString()
-publisher = "unknown"
-copyrightYears = "2006-2026"
-url = "https://www.nvaccess.org"
+publisher = "CSRA Team"
+copyrightYears = "2026"
+url = "https://csra-project.org"
 updateVersionType = None
 try:
 	from _buildVersion import version, publisher, updateVersionType, version_build  # type: ignore[reportMissingModuleSource] # noqa: F401

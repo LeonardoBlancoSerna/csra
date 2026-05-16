@@ -1,39 +1,57 @@
-# NVDA
+# CSRA: Comentary Screen Reader and Accessibility
 
-NVDA (NonVisual Desktop Access) is a free, open source screen reader for Microsoft Windows.
-It is developed by NV Access in collaboration with a global community of contributors.
-To learn more about NVDA or download a copy, visit the main [NV Access](http://www.nvaccess.org/) website.
+**CSRA** is a free, open-source, high-performance screen reader for Microsoft Windows, built on the foundations of NVDA but engineered for the next generation of accessibility and professional production.
 
-Please note: the NVDA project has a [Citizen and Contributor Code of Conduct](CODE_OF_CONDUCT.md). NV Access expects that all contributors and other community members will read and abide by the rules set out in this document while participating or contributing to this project.
+---
 
-The NVDA project is guided by a [product vision statement and set of principles](./projectDocs/product_vision.md).
-The vision and principles should be always considered when planning features and prioritizing work.
-NV Access also maintains a [development roadmap](https://www.nvaccess.org/post/nvda-roadmap/) of NVDA features and supporting infrastructure work.
+## 📜 History and Vision
 
-NVDA is available under a modified GNU General Public License version 2 or later.
-Please refer to [our license](./copying.txt) for more information.
+**CSRA** was born from the need to break the "duopoly" of JAWS and NVDA in the Windows ecosystem. While based on NVDA's core, CSRA integrates powerful features and enhancements that were previously rejected or unplanned by the original project. It is the perfect alternative for developers and users who demand a more robust, flexible, and feature-rich accessibility platform.
 
-## Acknowledgements
+### Key Milestones:
+*   **Integrated Power:** Native inclusion of essential add-ons (LBL, Unigram Plus, SIBIAC OCR, Tony's Enhancements) out of the box.
+*   **Professional Audio Focus:** Deep integration for DAWs (Reaper) and VST instruments (Kontakt, EZDrummer), making it the gold standard for blind musicians and producers.
+*   **CSRA ART (Access Remote Technology):** A completely rebranded and evolved remote access system, currently being migrated to Rust for unparalleled security and low-latency audio/file transmission.
 
-We would like to extend our sincere gratitude to [SignPath](https://www.signpath.io/) for their generous support in providing code signing services to many open source projects, including NVDA.
-Their contribution helps us maintain the security and integrity of our releases.
+---
 
-## NVDA Community
+## 🚀 Technical Innovations
 
-* [Support and information for NVDA users](https://www.nvaccess.org/get-help/)
-* [Report an issue or feature request](./projectDocs/issues/readme.md)
-* [Getting add-ons](https://download.nvaccess.org/documentation/userGuide.html#AddonsManager)
-* [Contact list](./projectDocs/community/expertsList.md) for NV Access and community experts.
-* [More important links and community information](./projectDocs/community/readme.md)
+### 🦀 The Rust Revolution
+CSRA is leading the industry by migrating critical low-level components from C++ to **Rust**.
+- **Memory Safety:** Eliminating crashes and vulnerabilities in networking and system hooks.
+- **Performance:** Leveraging Rust's speed for real-time audio and high-speed data transfer in CSRA ART.
+- **Hybrid Architecture:** A cutting-edge blend of Python (Logic/UI), Rust (Security/Performance), and C++ (Legacy Support).
 
-## Contributing to NVDA
+### 🎙️ ProAcces TTS
+We are moving away from eSpeakNG towards **ProAcces**, a Python-based synthesis engine designed for easier updates and superior integration, delivered as a high-performance compiled submodule.
 
-If you would like to contribute to NVDA, you can read more information in our [contributing guide](./.github/CONTRIBUTING.md).
-This includes information on reporting issues, triaging issues, testing, translating, contributing code/documentation and creating add-ons.
+### 🛠️ Developer Suite (CSRA DevTools)
+CSRA includes a built-in terminal suite to standardize development:
+- `addon init`: Bootstrap new projects instantly.
+- `manifest create`: Interactive assistant for manifest generation.
+- `addon <type>`: Ready-to-use templates for `appModules`, `globalPlugins`, `synthDrivers`, and more.
 
-## Status checks
+---
 
-* Alpha build status: [![view latest alpha builds](https://github.com/nvaccess/nvda/actions/workflows/testAndPublish.yml/badge.svg?branch=master)](https://github.com/nvaccess/nvda/actions/workflows/testAndPublish.yml?query=branch%3Amaster+event%3Apush)
-* Beta build status: [![view latest beta builds](https://github.com/nvaccess/nvda/actions/workflows/testAndPublish.yml/badge.svg?branch=beta)](https://github.com/nvaccess/nvda/actions/workflows/testAndPublish.yml?query=branch%3Abeta+event%3Apush)
-* Pre-commit status (master): [![view pre-commit checks on master](https://results.pre-commit.ci/badge/github/nvaccess/nvda/master.svg)](https://results.pre-commit.ci/latest/github/nvaccess/nvda/master)
-* CodeQL security analysis status (master): [![view CodeQL security analysis checks on master](https://github.com/nvaccess/nvda/actions/workflows/codeql.yml/badge.svg)](https://github.com/nvaccess/nvda/actions/workflows/codeql.yml)
+## 📂 Structural Integrity
+
+Unlike standard NVDA, CSRA maintains a strictly organized source tree:
+- **`source/waves/`**: All audio assets are organized into subdirectories by component.
+- **`source/psutil`, `source/markdown`, etc.**: Clean library packaging instead of root-level clutter.
+- **`source/CSRA-code-files/`**: A central library of integrated components for easy maintenance.
+
+---
+
+## 🤝 Contributing
+
+We welcome developers who want to push the boundaries of what a screen reader can do. Check out our `CONTRIBUTING.md` and explore the `nvda_helper_rust` and `csra_art_rust` directories to see the future in action.
+
+---
+
+## ⚖️ License and Copyright
+
+&copy; NV Access 2009-2026  
+&copy; CSRA Progeth 2026
+
+*CSRA is covered by the GNU General Public License (GPL). See the file COPYING for more details.*

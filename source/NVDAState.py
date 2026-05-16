@@ -69,7 +69,7 @@ class _WritePaths:
 
 	@property
 	def nvdaConfigFile(self) -> str:
-		return os.path.join(self.configDir, "nvda.ini")
+		return os.path.join(self.configDir, "csra.ini")
 
 	@property
 	def addonStateFile(self) -> str:

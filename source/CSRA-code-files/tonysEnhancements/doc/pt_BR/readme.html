@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+<title>Tony's enhancements 1.22.3</title>
+</head>
+<body>
+<h1>Tony's enhancements</h1>
+<p>Esse complemento contém vários pequenos aprimoramentos no leitor de tela
+NVDA, cada um deles pequeno demais para merecer um complemento separado.</p>
+<p>Esse complemento é compatível com o NVDA versão 2024.2 ou posterior</p>
+<h2>Downloads</h2>
+<p>Instale a versão mais recente da loja de complementos do NVDA.</p>
+<h2>Comandos de navegação de tabela aprimorados</h2>
+<ul>
+<li>NVDA+Control+dígito - pula para a 1ª/2ª/3ª/... 10ª coluna da tabela.</li>
+<li>NVDA+Alt+digito - pula para a 1ª/2ª/3ª/... 10ª linha da tabela.</li>
+</ul>
+<h2>Copiando de tabelas para a área de transferência</h2>
+<p>Com os atalhos a seguir, você pode copiar toda a tabela, a linha atual ou a
+coluna atual de forma formatada, para que possa colá-la como uma tabela em
+editores de rich text, como o Microsoft Word ou o WordPad.</p>
+<ul>
+<li>NVDA+Alt+T - mostra o menu pop-up com opções para copiar a tabela ou parte
+  dela.</li>
+</ul>
+<p>Também há scripts separados para copiar tabelas, linhas, colunas e células,
+mas eles não têm atalhos de teclado atribuídos por padrão; os atalhos de
+teclado personalizados para eles podem ser atribuídos na caixa de diálogo
+InputGestures do NVDA.</p>
+<h2>Troca automática de idioma</h2>
+<p>Permite alternar automaticamente o idioma do sintetizador por conjunto de
+caracteres. A expressão regular para cada idioma pode ser configurada na
+janela de preferências desse complemento. Certifique-se de que seu
+sintetizador seja compatível com todos os idiomas de seu interesse. No
+momento, não há suporte para a alternância entre dois idiomas baseados em
+latim ou dois idiomas cujos conjuntos de caracteres sejam semelhantes.</p>
+<h2>Comandos de busca rápida</h2>
+<p>A partir da versão v1.18, os comandos do QuickSearch foram movidos para o
+[complemento IndentNav] (https://github.com/mltony/nvda-indent-nav).</p>
+<h2>Suprimir discurso indesejado “não selecionado” do NVDA</h2>
+<p>Suponha que você tenha algum texto selecionado em editores de texto. Em
+seguida, você pressiona uma tecla, como Home ou Seta para cima, que deve
+levá-lo a outra parte do documento. O NVDA anunciaria “não selecionado” e,
+em seguida, falaria a seleção anterior, o que, às vezes, pode ser
+inconveniente. Esse recurso impede que o NVDA fale o texto selecionado
+anteriormente em situações como essa.</p>
+<h2>Pressionamentos de teclas dinâmicos</h2>
+<p>Você pode atribuir determinadas teclas para serem dinâmicas. Depois de
+pressionar essa tecla, o NVDA verificará se há atualizações na janela em
+foco e, se a linha for atualizada, o NVDA falará automaticamente. Por
+exemplo, determinados pressionamentos de tecla em editores de texto devem
+ser marcados como dinâmicos, como pular para o marcador, pular para outra
+linha e pressionamentos de tecla de depuração, como entrar/passar.</p>
+<p>O formato da tabela dinâmica de pressionamentos de teclas é simples: cada
+linha contém uma regra no seguinte formato:
+<code>pressionamento de tecla appName</code>
+em que <code>appName</code> é o nome do aplicativo em que esse pressionamento de tecla
+é marcado como dinâmico (ou <code>*</code> para ser marcado como dinâmico em todos os
+aplicativos) e <code>keystroke</code> é um pressionamento de tecla no formato NVDA, por
+exemplo, <code>control+alt+shift+pagedown</code>.</p>
+<p>Para descobrir o appName do seu aplicativo, faça o seguinte:</p>
+<ol>
+<li>Mude para seu aplicativo.</li>
+<li>Abra o console do NVDA Python pressionando NVDA+Shift+Z.</li>
+<li>Digite <code>focus.appModule.appName</code> e pressione Enter.</li>
+<li>Pressione F6 para ir para o painel de saída e encontrar o valor de
+   appName na última linha.</li>
+</ol>
+<h2>Exibição e ocultação de janelas</h2>
+<p>A partir da versão v1.18, os comandos mostrar/ocultar foram movidos para
+[complemento do Task Switcher]
+(https://github.com/mltony/nvda-task-switcher).</p>
+<h2>Bip quando o NVDA está ocupado</h2>
+<p>Marque essa opção para que o NVDA forneça feedback de áudio quando estiver
+ocupado. O fato de o NVDA estar ocupado não indica necessariamente um
+problema com o NVDA, mas é um sinal para o usuário de que os comandos do
+NVDA não serão processados imediatamente.</p>
+<h2>Aplicação Ajuste de volume</h2>
+<p>Essa funcionalidade foi incorporada ao núcleo do NVDA e está disponível no
+NVDA v2024.3 ou posterior.</p>
+<h2>Silenciar o microfone</h2>
+<p>Esse complemento fornece um comando para alternar o microfone. Não há nenhum
+gesto atribuído a esse comando por padrão; você pode atribuir um gesto na
+caixa de diálogo “Gestos de entrada" do NVDA, se necessário.</p>
+<h2>Divisão de som</h2>
+<p>Essa funcionalidade foi incorporada ao núcleo do NVDA e está disponível no
+NVDA v2024.2 ou posterior.</p>
+<h2>Funções aprimoradas do mouse</h2>
+<ul>
+<li>Alt+NumPadDivide: Aponta o cursor do mouse para o objeto atual e clica
+  nele.</li>
+<li>Alt+NumPadMultiply: Aponte o cursor do mouse para o objeto atual e clique
+  nele com o botão direito do mouse.</li>
+<li>Alt+NumPadDelete: Move o cursor do mouse para fora do caminho, para o
+  canto superior esquerdo da tela. Isso pode ser útil para evitar que o
+  mouse passe por cima de janelas indesejadas em determinados aplicativos.</li>
+</ul>
+<p>A funcionalidade de rolagem da roda do mouse foi incorporada ao núcleo do
+NVDA e está disponível no NVDA v2024.3 ou posterior.</p>
+<h2>Detecção do modo de inserção em editores de texto</h2>
+<p>Se essa opção estiver ativada, o NVDA emitirá um bipe quando detectar o modo
+de inserção em editores de texto.</p>
+<h2>Bloqueio do pressionamento de tecla de inserção dupla</h2>
+<p>No NVDA, pressionar a tecla Insert duas vezes seguidas alterna o modo de
+inserção nos aplicativos. No entanto, às vezes isso acontece acidentalmente
+e aciona o modo de inserção. Como esse é um pressionamento de tecla
+especial, não pode ser desativado nas configurações. Esse complemento
+oferece uma maneira de bloquear esse atalho de teclado. Quando a inserção
+dupla é bloqueada, o modo de inserção ainda pode ser ativado pressionando
+NVDA+F2 e, em seguida, Inserir.</p>
+<p>Essa opção está desativada por padrão e deve ser ativada nas configurações.</p>
+<h2>Bloqueio do pressionamento duplo da tecla Caps Lock</h2>
+<p>No NVDA, quando a tecla Caps Lock é definida como uma tecla do NVDA,
+pressioná-la duas vezes seguidas alterna entre os modos de entrada em
+maiúsculas e minúsculas. No entanto, isso às vezes pode causar uma
+alternância não intencional entre esses modos. Como o comportamento dessa
+tecla é exclusivo e não pode ser desativado por meio das configurações, esse
+complemento oferece um método para bloquear esse atalho de teclado
+específico. Quando o pressionamento duplo da tecla Caps Lock é bloqueado,
+você ainda pode alternar entre os modos de entrada em maiúsculas e
+minúsculas pressionando NVDA+F2 seguido da tecla Caps Lock.</p>
+<p>Essa opção está desativada por padrão e deve ser ativada nas configurações.</p>
+<h2>Prioridade do sistema do processo NVDA</h2>
+<p>Isso permite aumentar a prioridade do sistema do processo do NVDA, o que
+pode melhorar a capacidade de resposta do NVDA, especialmente quando a carga
+da CPU é alta.</p>
+<h2>Correção de um erro quando o foco fica preso na barra de tarefas ao pressionar Windows+Numbers</h2>
+<p>Esse recurso foi removido a partir da versão v1.18. Se precisar de uma
+funcionalidade de alternância de tarefas mais confiável, considere a
+possibilidade de usar o [complemento Task Switcher]
+(https://github.com/mltony/nvda-task-switcher).</p>
+<p>[[!tag dev stable]]</p>
+</body>
+</html>

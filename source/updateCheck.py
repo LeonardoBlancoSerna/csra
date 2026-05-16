@@ -81,7 +81,7 @@ __getattr__ = _deprecate.handleDeprecations(
 
 
 #: The URL to use for update checks.
-_DEFAULT_CHECK_URL = "https://api.nvaccess.org/nvdaUpdateCheck"
+_DEFAULT_CHECK_URL = ""  # Updates disabled for CSRA project
 #: The time to wait between checks.
 CHECK_INTERVAL = 86400  # 1 day
 #: The time to wait before retrying a failed check.

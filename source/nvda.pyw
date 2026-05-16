@@ -145,21 +145,21 @@ def terminateRunningNVDA(window):
 		winKernel.closeHandle(h)
 
 
-# Handle running multiple instances of NVDA
+# Handle running multiple instances of CSRA
 try:
-	oldAppWindowHandle = winUser.FindWindow("wxWindowClassNR", "NVDA")
+	oldAppWindowHandle = winUser.FindWindow("wxWindowClassNR", "CSRA")
 except WindowsError as e:
-	_log.info("Can't find existing NVDA via Window Class")
+	_log.info("Can't find existing CSRA via Window Class")
 	_log.debug(f"FindWindow error: {e}")
 	oldAppWindowHandle = 0
 if not winUser.isWindow(oldAppWindowHandle):
 	oldAppWindowHandle = 0
 
 if oldAppWindowHandle and not globalVars.appArgs.easeOfAccess:
-	_log.debug(f"NVDA already running. OldAppWindowHandle: {oldAppWindowHandle}")
+	_log.debug(f"CSRA already running. OldAppWindowHandle: {oldAppWindowHandle}")
 	if globalVars.appArgs.check_running:
-		# NVDA is running.
-		_log.debug("Is running check complete: NVDA is running.")
+		# CSRA is running.
+		_log.debug("Is running check complete: CSRA is running.")
 		_log.debug("Exiting")
 		sys.exit(0)
 	try:
@@ -168,7 +168,7 @@ if oldAppWindowHandle and not globalVars.appArgs.easeOfAccess:
 	except Exception as e:
 		winUser.MessageBox(
 			0,
-			f"Couldn't terminate existing NVDA process, abandoning start:\nException: {e}",
+			f"Couldn't terminate existing CSRA process, abandoning start:\nException: {e}",
 			"Error",
 			winUser.MB_OK,
 		)
@@ -177,8 +177,8 @@ if globalVars.appArgs.quit or (oldAppWindowHandle and globalVars.appArgs.easeOfA
 	_log.debug("Quitting")
 	sys.exit(0)
 elif globalVars.appArgs.check_running:
-	# NVDA is not running.
-	_log.debug("Is running check: NVDA is not running")
+	# CSRA is not running.
+	_log.debug("Is running check: CSRA is not running")
 	_log.debug("Exiting")
 	sys.exit(1)
 
@@ -207,7 +207,7 @@ def _acquireMutex(_desktopName: str) -> wintypes.HANDLE | None:
 		# Don't take initial ownership, use wait to acquire ownership instead.
 		# Allows waiting for a prior process to finish exiting.
 		False,  # bInitialOwner
-		f"Local\\NVDA_{_desktopName}",  # lpName
+		f"Local\\CSRA_{_desktopName}",  # lpName
 	)
 	createMutexResult = winBindings.kernel32.GetLastError()
 	if not _mutex:

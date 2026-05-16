@@ -1,0 +1,9 @@
+historia:
+
+CSRA (Comentary Screen Reader and Accesibility) se creó luego de muchos intentos de crear un lector de pantalla distinto a JAWS y NVDA, el bipolio de lectores de pantalla en Windows. este lector escencialmente basa su código en NVDA y las mejoras hechas son en su mayoría hechas por Issues rechasadas por motivos como: no planeado, y también la integración de complementos de NVDA que mejoran escencialmente la accesibilidad y añaden funciones potentes a NVDA que no se integran. alternatiba perfecta para desarrolladores que quieren ayudar en la creación de un lector de pantalla potente.
+
+notas escenciales:
+se a planteado migrar/añadir componentes en Rust a el lector.
+aún se posee retrocompatibilidad con complementos de NVDA por la extensión. sin embargo, las APIS son distintas.
+el lector plantea remplazar eSpeakNG por [ProAcces(https://github.com/LeonardoBlancoSerna/ProAcces-TTS)] un proyecto en Python mucho más fácil de añadir como un submódulo compilado en .exe, pues usar el código en Python propio haría tener que incluir las librerías del TTS lo cual integraría el peso del lector.
+&copy NVACCES 2009 a 2026 &copy CSRA proget.

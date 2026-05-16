@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+<title>Tony's enhancements 1.22.3</title>
+</head>
+<body>
+<h1>nvda-tonys-enhancements</h1>
+<p>This add-on contains a number of small improvements to NVDA screenreader, each of them too small to deserve a separate add-on.</p>
+<p>This add-on is compatible with NVDA version 2024.2 or later</p>
+<h2>Downloads</h2>
+<p>Please install the latest version from NVDA add-on store.</p>
+<h2>Enhanced table navigation commands</h2>
+<ul>
+<li>NVDA+Control+digit - jump to 1st/2nd/3rd/... 10th column in the table.</li>
+<li>NVDA+Alt+digit - jump to 1st/2nd/3rd/... 10th row in the table.</li>
+</ul>
+<h2>Copying tables to clipboard</h2>
+<p>With the following shortcuts you can copy either the whole table or current row or current column in a formatted way, so that you can paste it as a table to rich text editors, such as Microsoft Word or WordPad.
+- NVDA+Alt+T - shows popup menu with options to copy table or part of it.
+There are also separate scripts for copying tables, rows, columns and cells, but they don't have keyboard shortcuts  assigned by default, custom keyboard shortcuts cfor them can be assigned in InputGestures dialog of NVDA.</p>
+<h2>Clipboard history</h2>
+<p>As of NVDA v2024.4 built-in Windows clipboard history feature works poorly with NVDA. As a drop-in replacement, this add-on provides a fully accessible clipboard history feature. It is bound to <code>Windows+V</code> by default, so it replaces the built-in feature.</p>
+<h2>Automatic language switching</h2>
+<p>Allows to automatically switch the language of your synthesizer by character set. Refgular expression for every language can be configured in the preferences window for this add-on. Please make sure that your synthesizer supports all the languages you're interested in. Switching between two Latin-based languages or two languages whose character sets are similar is not supported at this time.</p>
+<h2>Quicksearch commands</h2>
+<p>As of version v1.18, QuickSearch commands have been moved to <a href="https://github.com/mltony/nvda-indent-nav">IndentNav add-on</a>.</p>
+<h2>Suppress unwanted 'unselected' speech from NVDA</h2>
+<p>Suppose you have some text selected in text editors. Then you press a key, such as Home, or UpArrow, that is supposed to take you to another part of the document. NVDA would announce 'unselected' and then speak the former selection, which can be inconvenient at times. This feature prevents NVDA from speaking formerly selected text in situations like this.</p>
+<h2>Dynamic keystrokes</h2>
+<p>You can assign certain keystrokes to be dynamic. After issuing such a keystroke, NVDA will be checking currently focused window for any updates and if the line is updated, NVDA will speak it automatically. For example, certain keystrokes in text editors should be marked dynamic, such as Jump to bookmark, jump to another line and debugging keystrokes,such as step into/step over.</p>
+<p>The format of dynamic keystrokes table is simple: every line contains a rule in the following format:
+<code>appName keystroke</code>
+where <code>appName</code> is the name of the application where this keystroke is marked dynamic (or <code>*</code> to b marked dynamic in all applications), and<code>keystroke</code> is a keystroke in NVDA format, for example, <code>control+alt+shift+pagedown</code>.</p>
+<p>In order to figure out appName for your application, do this:</p>
+<ol>
+<li>Switch to your application.</li>
+<li>Open NVDA Python Console by pressing NVDA+Shift+Z.</li>
+<li>Type <code>focus.appModule.appName</code> and hit enter.</li>
+<li>Press F6 to go to output pane and find appName value in the last line.</li>
+</ol>
+<h2>Showing and hiding windows</h2>
+<p>As of version v1.18 show/hide commands have been moved to <a href="https://github.com/mltony/nvda-task-switcher">Task Switcher add-on</a>.</p>
+<h2>Beep when NVDA is busy</h2>
+<p>Check this option for NVDA to provide audio feedback when NVDA is busy. NVDA being busy does not necessarily indicate a problem with NVDA, but rather this is a signal to the user that any NVDA commands will not be processed immediately.</p>
+<h2>Application Volume adjustment</h2>
+<p>This functionality has been merged into NVDA core and is available in NVDA v2025.1 or later.</p>
+<h2>Mute microphone</h2>
+<p>This add-on provides a command for switching the microphone. There is no gesture assigned to this command by default, you can assign a gesture in NVDA's "Input Gestures" dialog if needed.</p>
+<h2>Sound split</h2>
+<p>This functionality has been merged into NVDA core and is available in NVDA v2024.2 or later.</p>
+<h2>Enhanced mouse functions</h2>
+<ul>
+<li>Alt+NumPadDivide: Point mouse cursor at current object and click it.</li>
+<li>Alt+NumPadMultiply: Point mouse cursor at current object and right mouse button click on it.</li>
+<li>Alt+NumPadDelete: Move mouse cursor out of the way to top left corner of the screen. This can be useful to prevent unwanted hover over windows in certain applications.</li>
+</ul>
+<p>The functionality for mouse wheel scrolling has been merged into NVDA core and is available in NVDA v2024.3 or later.</p>
+<h2>Detecting insert mode in text editors</h2>
+<p>If this option is enabled, NVDA will beep when it detects insert mode in text editors.</p>
+<h2>Blocking double insert keystroke</h2>
+<p>In NVDA pressing Insert key twice in a row toggles insert mode in applications. However, sometimes it happens accidentally and it triggers insert mode. Since this is a special keystroke, it cannot be disabled in the settings. This add-on provides a way to block this keyboard shortcut. When double insert is blocked, insert mode can stil be toggled by pressing NVDA+F2 and then Insert. </p>
+<p>This option is disabled by default and must be enabled in the settings.</p>
+<h2>Blocking double Caps Lock keystroke</h2>
+<p>In NVDA, when Caps Lock is set as an NVDA key, pressing it twice in a row toggles between uppercase and lowercase input modes. However, this can sometimes cause unintentional switching between these modes. Since this key’s behavior is unique and cannot be disabled through settings, this add-on offers a method to block this specific keyboard shortcut. When the double Caps Lock key press is blocked, you can still switch between uppercase and lowercase input modes by pressing NVDA+F2 followed by the Caps Lock key. </p>
+<p>This option is disabled by default and must be enabled in the settings.</p>
+<h2>System priority of NVDA process</h2>
+<p>This allows to boost system priority of NVDA process, that might improve NVDA responsiveness, especially when CPU load is high.</p>
+<h2>Fixing a bug when focus gets stuck in the taskbar when pressing Windows+Numbers</h2>
+<p>This feature has been removed as of version v1.18. If you need a more reliable task switching functionality, please consider using <a href="https://github.com/mltony/nvda-task-switcher">Task Switcher add-on</a>.</p>
+</body>
+</html>

@@ -434,7 +434,7 @@ class MainFrame(wx.Frame):
 			closesDialog=False,
 		)
 		# Translators: The title of the dialog to show about info for NVDA.
-		aboutDialog = MessageDialog(None, versionInfo.aboutMessage, _("About NVDA"))
+		aboutDialog = MessageDialog(None, versionInfo.aboutMessage, _("About CSRA"))
 		aboutDialog.addButton(copyButton)
 		aboutDialog.Show()
 

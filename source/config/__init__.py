@@ -185,7 +185,7 @@ def getInstalledUserConfigPath() -> Optional[str]:
 
 	configParent = SHGetKnownFolderPath(configFolder)
 	try:
-		return os.path.join(configParent, "nvda")
+		return os.path.join(configParent, "csra")
 	except WindowsError:
 		# (#13242) There is some uncertainty as to how this could be caused
 		log.debugWarning("Installed user config is not in local app data", exc_info=True)

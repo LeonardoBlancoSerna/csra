@@ -1,0 +1,191 @@
+Tú dijiste
+Propuesta: Agregar sobremuestreo adicional usando un script en C, Rust o Python. #150
+Editar título del problema
+New issue
+Copy link
+Asunto
+Abierto
+Asunto
+Abierto
+Propuesta: Agregar sobremuestreo adicional usando un script en C, Rust o Python.
+#150
+Copy link
+Descripción
+Perfil de @LeonardoBlancoSerna
+LeonardoBlancoSerna
+abiertohace 5 días· editado por LeonardoBlancoSerna
+Abrir ediciones
+Issue body actions
+Hola@davidacmy colaboradores,
+Mientras revisaba repositorios de complementos de Eloquence como eloquence_64 , noté un archivo en ese repositorio específico que creo que es útil: upsampler.c .
+Este archivo nos permite aumentar la frecuencia de muestreo de Eloquence en NVDA. Podemos aplicar los mismos principios a IBMTTS para ampliar sus rangos de frecuencia de muestreo.
+Aquí tienes un fragmento de código que logra esto y proporciona varias opciones de frecuencia de muestreo:
+• 16 kHz
+• 22 kHz
+• 32 kHz
+• 33 kHz
+• 44 kHz
+Nota: Este código es una adaptación en Python del upsampler.carchivo original, optimizada para admitir proporciones decimales y mejorar la compatibilidad de audio[cite: 1].
+Opciones de código adicionales
+También podemos usar este código como base y convertirlo a Rust (.dll) para una mayor eficiencia.
+Upsampler.py
+Espero que lo implementes. Gracias por leer.
+¡Saludos!
+React
+Actividad
+lbk2907  comentó hace 5 días
+Perfil de @lbk2907
+lbk2907
+hace 5 días
+Contribuyente
+Acciones en respuesta al comentario de lbk2907, 22:24 del 2 de mayo.
+He probado los 22 kHz. No está mal. No estoy seguro de si@davidacmQuiero implementarlo en IBMTTS. ¿Y qué hay del IBMTTS original?@davidacm¿Implementar esto?
+React
+lbk2907  comentó hace 5 días
+Perfil de @lbk2907
+lbk2907
+hace 5 días
+Contribuyente
+Acciones en respuesta al comentario de lbk2907, 22:38 del 2 de mayo.
+Para quienes deseen escuchar una demostración de audio, aquí la tienen. La comparo con la versión original de IBMTTS. Este audio está dividido en dos partes. Ambas tienen la misma longitud de texto, la misma voz, velocidad y volumen. La primera que escucharán proviene del repositorio mencionado anteriormente y la segunda es de la versión original de IBMTTS 6.6.1.0.
+Manifestación
+React
+LeonardoBlancoSerna  comentó hace 4 días
+Perfil de @LeonardoBlancoSerna
+LeonardoBlancoSerna
+hace 4 días
+Autor
+Acciones en respuesta al comentario de LeonardoBlancoSerna, 18:11 del 3 de mayo
+hola@lbk2907Me parece que los cambios son mucho más perceptibles a 44 kHz.
+React
+lbk2907  comentó hace 4 días
+Perfil de @lbk2907
+lbk2907
+hace 4 días
+Contribuyente
+Acciones en respuesta al comentario de lbk2907, 18:42 del 3 de mayo.
+¿Podría indicarme dónde puedo cambiar a 44 kHz?
+React
+LeonardoBlancoSerna  comentó anteayer
+Perfil de @LeonardoBlancoSerna
+LeonardoBlancoSerna
+anteayer
+Autor
+Acciones en respuesta al comentario de LeonardoBlancoSerna, 18:41 del 5 de mayo
+hola@lbk2907No he probado este script en IBMTTS. Lo probé en una versión modificada de Eloquence, la antigua, la que no tiene compatibilidad con 64 bits. Adjunto el complemento para que puedas probar la calidad de la voz. Añadí este script al plugin usando IA, y para configurar la frecuencia de muestreo (si no está en 44 kHz por defecto), tienes que ir al menú NVDA > Preferencias > Opciones > Voz > Resonancia Corporal y ajustar el control deslizante a 100. Por eso me gustaría que este script se añadiera a IBMTTS, para no tener que usarlo en un plugin antiguo y obsoleto.
+¡Saludos!
+Eloquence.zip
+Nota: No pude adjuntarlo como un archivo .zip. Debes cambiar la extensión del archivo descargado a .nvda-addon.
+React
+lbk2907  comentó anteayer
+Perfil de @lbk2907
+lbk2907
+anteayer
+Contribuyente
+Acciones en respuesta al comentario de lbk2907, 18:50 del 5 de mayo.
+@LeonardoBlancoSerna
+Lo probé. Está bien. Te da más flexibilidad para ajustar el sonido de la voz.
+@davidacm
+Quizás podrías considerar agregar esta función.
+React
+davidacm  comentó anteayer
+Perfil de @davidacm
+davidacm
+anteayer
+Dueño
+Acciones en respuesta al comentario de davidacm, 18:53 del 5 de mayo
+Hola. Esto suena como algo que podría ser útil para otros sistemas de conversión de texto a voz (TTS). Sin embargo, parece algo que se sale de las funciones de un controlador. ¿Qué opinas de implementarlo como un complemento independiente? De esa forma, también se podría usar en otros TTS.
+Todavía no he probado la solución sugerida.
+React
+lbk2907  comentó anteayer
+Perfil de @lbk2907
+lbk2907
+anteayer
+Contribuyente
+Acciones en respuesta al comentario de lbk2907, 18:55 del 5 de mayo
+@davidacm
+Si lo implementan como un complemento, ¿podrían indicarme cómo funcionará en la plataforma TTS?
+React
+lbk2907  comentó anteayer
+Perfil de @lbk2907
+lbk2907
+anteayer
+Contribuyente
+Acciones en respuesta al comentario de lbk2907, 18:57 del 5 de mayo.
+@davidacm
+Si crees que crear un complemento es el mejor enfoque, ¿qué tal si primero analizas cómo funciona exactamente, implementas uno y pones IBMTTS como referencia para aquellos que quieran usar una frecuencia de muestreo más alta?
+React
+lbk2907  comentó anteayer
+Perfil de @lbk2907
+lbk2907
+anteayer
+Contribuyente
+Acciones en respuesta al comentario de lbk2907, 19:00 h del 5 de mayo.
+@davidacm
+Tengo otra idea. ¿Qué pasaría si se instala este complemento y el usuario se encuentra con una tasa de muestreo TTS más alta, como por ejemplo Vocalizer premium high voices?
+React
+davidacm  comentó anteayer
+Perfil de @davidacm
+davidacm
+anteayer
+Dueño
+Acciones en respuesta al comentario de davidacm, 22:04 del 5 de mayo
+Para mayor claridad: lo que este código hace en realidad no es "recuperar información perdida".
+Cuando se genera una señal a 11025 Hz, su ancho de banda útil está fundamentalmente limitado por el teorema de muestreo de Nyquist-Shannon a aproximadamente 5,5 kHz. Cualquier frecuencia superior a esta nunca se capturó, por lo que aumentar la frecuencia de muestreo posteriormente no permite recuperarlas.
+Entonces, ¿por qué notas la diferencia?
+Analizando el código, creo que está sucediendo lo siguiente:
+• Interpolación (filtrado FIR): reconstruye una forma de onda más suave entre las muestras, reduciendo la aspereza y los artefactos de aliasing.
+• Suavizado: limita los cambios bruscos, lo que hace que el habla sintética suene menos "áspera".
+• Mejora de alta frecuencia: aumenta artificialmente las frecuencias altas (alrededor de ~6 kHz).
+• Tramado y filtrado: reduce el ruido de cuantización y suprime los artefactos.
+Por lo tanto, la mejora percibida proviene de una mejora psicoacústica, no de la recuperación de detalles reales perdidos.
+En cuanto a su implementación en este controlador, sigo pensando que sería mejor como un complemento independiente en lugar de dentro de un controlador específico.
+Un enfoque más sólido sería bajar este nivel e implementarlo como un complemento que se conecte o reemplace nvwaveel módulo de NVDA .
+En lugar de modificar cada controlador, el complemento intercepta el audio justo antes de la reproducción y aplica el procesamiento digital de señales (DSP) en ese punto (sobremuestreo, suavizado, ecualización, etc.).
+Para evitar afectar a todo indiscriminadamente, podría hacerse selectivo:
+• Solo se procesan flujos de datos con una frecuencia de muestreo inferior a un determinado valor (por ejemplo, < 44,1 kHz), lo que está dirigido principalmente a sistemas de síntesis de voz más antiguos como viavoice/Eloquence.
+• Opcionalmente, permite detectar qué módulo o sintetizador está produciendo el audio y aplicar el procesamiento solo a aquellos específicos, configurados por el usuario.
+• Proporciona opciones de configuración para que el usuario pueda activar/desactivar o ajustar el efecto.
+Por aquí:
+• Funciona automáticamente con varios motores de síntesis de voz.
+• Los controladores se mantienen limpios y centrados únicamente en la síntesis.
+• El DSP se vuelve reutilizable y configurable.
+En otras palabras, en lugar de integrarlo en un controlador específico, actuaría como una capa DSP selectiva dentro del pipeline de audio de NVDA .
+Desconozco la complejidad de su implementación, pero NVDA podría beneficiarse de un DSP selectivo y configurable.
+En mi caso, no me gustaron los resultados en mi idioma, pero son mejores en inglés americano. Quizás tendría que modificar los parámetros para la voz en español latinoamericano, pero actualmente no es posible y no quisiera añadir más ajustes a IBMTTS. Sin embargo, con un complemento independiente, se podrían implementar esos ajustes para que el usuario pudiera configurar el efecto según sus necesidades.
+React
+lbk2907  comentó anteayer
+Perfil de @lbk2907
+lbk2907
+anteayerpor correo electrónico
+Contribuyente
+Acciones en respuesta al comentario de lbk2907, ayer a las 5:07 AM
+
+@davidacm 
+¿Qué te parece si le sugieres a NV Access que implemente directamente esta función en NVDA? Me gustaría hacerlo, pero me temo que mi explicación no sea lo suficientemente clara o que la gente no la entienda. Mi inglés y mis conocimientos de programación son limitados.
+…
+React
+davidacm  comentó ayer
+Perfil de @davidacm
+davidacm
+ayer
+Dueño
+Acciones en respuesta al comentario de davidacm, ayer a las 9:37 AM
+NVDA no implementaría algo así. Dirían que no es una prioridad o que no es una tarea para lectores de pantalla. Créanme, lo he experimentado cuando he intentado enviar una idea o una solicitud de extracción.
+React
+LeonardoBlancoSerna  comentó Hace 3 horas
+Perfil de @LeonardoBlancoSerna
+LeonardoBlancoSerna
+Hace 3 horas· editado por LeonardoBlancoSerna
+Abrir ediciones
+Autor
+Acciones en respuesta al comentario de LeonardoBlancoSerna, hoy a las 17:03.
+Confirmo lo que dice.@davidacmConozco varias cosas geniales para NVDA, pero nunca se implementan. La idea de un complemento me parece buena, aparte de IBMTTS.
+React
+lbk2907  comentó Hace 2 horas
+Perfil de @lbk2907
+lbk2907
+Hace 2 horaspor correo electrónico
+Contribuyente
+Acciones en respuesta al comentario de lbk2907, hoy a las 18:01.
+¿Y cuál es tu próximo plan? ¿Vas a crear un complemento para esto? Suena interesante.

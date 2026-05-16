@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+<title>NVDA Eklentileri için Yardımcı Araçlar 1.5</title>
+</head>
+<body>
+<h1>NVDA Eklentileri için Yardımcı Araçlar Kılavuzu:</h1>
+<p>Bu eklenti, yüklenecek, kaldırılacak ve zaten yüklü eklentilerimiz için bir yardımcı araç paketi olmaya çalışır.  </p>
+<p>Farklı alanlarda, eklentilerimize toplu bir şekilde işlemler yapma imkanı vererek ve eklenti yöneticisinde olduğu gibi tek tek gitmek zorunda kalmadan mümkün olduğunca hızlı olmaya çalışıyoruz.  </p>
+<p>Halihazırda yeni özellikler olarak eklenen alanlar, farklı sürümlerde iyileştirilecektir.  </p>
+<p>Bu eklenti, NVDA&gt;Araçlar&gt;NVDA eklentileri için yardımcı araçlar yolunu takip ederek çalıştırılır.  </p>
+<p>Eklenti, hızlı kullanım için atanmış bir kısayol tuşuna sahip değildir.  </p>
+<p>Girdi hareketleri iletişim kutusunda, NVDA eklentileri için yardımcı araçlar başlığı altından eklenebilir.  </p>
+<h2>sorumluluk reddi:</h2>
+<p>Eklentinin kullanımından son kullanıcı sorumludur.  </p>
+<p>Her şeyin mümkün olduğunca güvenilir olması amaçlanmıştır, ancak sorunlar her zaman ortaya çıkabilir, bu nedenle tamamlayıcı yazarı bu eklentinin kullanımından kaynaklanan herhangi bir sorundan sorumlu olmayacaktır.  </p>
+<h1>Genel açıklama:</h1>
+<p>Uygulama 3 bölümde ele alınmaktadır.  </p>
+<ul>
+<li>Birinci bölüm: Kullanmak istediğimiz kategoriyi seçebileceğimiz liste. Eklentiyi her açtığımızda imleç bu listeye odaklanır.
+Bu listede yukarı ve aşağı hareket etmeliyiz.</li>
+<li>İkinci bölüm: Seçtiğimiz kategorinin içeriğini gösteren alandır.
+Bu alan kategoriye göre değişmektedir. Kategorilerin açıklaması daha sonra verilecektir.
+Kısayol tuşları veya sekme  ile kategorilere erişebiliriz.</li>
+<li>Üçüncü bölüm: Bu bölüm, herhangi bir işlem yapıldığında etkinleştirilecek ve kullanıcıya neler olduğu hakkında bilgi veren bir düzenleme kutusu içerir. Kullanıcı ayrıca tüm işlemlerde bir ilerleme çubuğu ile bilgilendirilir.</li>
+</ul>
+<p>Seçtiğimiz kategoriye bağlı olarak butonlar ve bir kapat tuşu içerir.</p>
+<p>Güncel bir işlem olmadığı sürece eklenti Escape, Alt+F4 ile kapatılabilir veya Kapat düğmesine sekme ile gelerek de kapatılabilir.</p>
+<h2>Eklenti paketleyici:</h2>
+<p>Sekme ile listeye gelip bu kategoriyi seçersek, yüklediğimiz tüm eklentilerin etkin, devre dışı veya desteklenmemesine bakılmaksızın sıralandığı bir listeye erişiriz.  </p>
+<p>Alt+L ile de hızlı bir şekilde erişebildiğimiz bu listede seçmek istediğimiz tüm eklentileri boşluk bırakarak seçip seçtiğimiz bir dizine yedekleyebiliriz.  </p>
+<p>Her eklenti kendi adı, sürümü ve “_gen” tanımlayıcısı ile oluşturulacaktır, oluşturulan bu eklentiler diğer NVDA kullanıcıları tarafından sorunsuz bir şekilde kurulabilir.  </p>
+<p>Seç adlı butonun üzerine sekme tuşu ile gelip boşluk çubuğu ile etkinleştirdiğimizde: Tümünü seç ve Seçimi temizle seçeneklerini görüyoruz. Aynı içeriğe ALT+S kısayolu ile de erişebiliriz.  </p>
+<p>Yine tab ile üzerine gelerek veya ALT+O kısayolu kullanılarak Oluştur butonu etkinleştirildiğinde, Dosya kaydetme penceresi açılır ve bir dizin seçmemiz istenir.  </p>
+<p>Dizin seç ile belirttiğimiz konumu onayladıktan sonra, listeden seçtiğimiz eklentinin paketlenme işlemi başlayacaktır. Bu esnada, aşamaların erişilebilir şekilde gösterildiği bir kutu ekrana gelecek ve penceredeki diğer bütün butonlar işlem tamamlanana kadar devre dışı bırakılacaktır.  </p>
+<p>İşlem tamamlandıktan sonra, bize bildirilir ve olumlu veya olumsuz bilgiler sunulur. ALT+B ile Kabul et tıklanarak pencere kapatılır.  </p>
+<p>Eklenti oluşturma işleminin gerçekleştirilebilmesi için, listeden en az bir eklentinin seçili olması gerekir. Aksi taktirde, bir mesaj ile kullanıcı uyarılacaktır.  </p>
+<h2>Çoklu yükleyici:</h2>
+<p>Bu kategori, Eklentilerimizin bulunduğu bir Dizin seçmemize izin verecek ve hepsini bir kerede kurabileceğiz.  </p>
+<p>İlk listeden Çoklu yükleyici seçeneğini seçtikten sonra sekme tuşu ile ilerlediğimizde: "Yüklemek istediğiniz eklentilerin bulunduğu bir dizin seçin" butonuna erişiriz. ALT+S ile de erişebildiğimiz bu düğmeye bastığımızda, kurmak istediğimiz eklentilerin bulunduğu klasörü seçebiliriz.  </p>
+<p>Bu kategorideki arayüzün geri kalanı, biz bir dizin seçene kadar devre dışı bırakılır.  </p>
+<p>Bir dizin seçtiğimizde, odak bizi eklentileri tararken neler olup bittiği hakkında bilgilendirileceğimiz tek okuma kutusunda bırakacak, ayrıca ilerleme çubuğundan da bilgi alacağız.  </p>
+<p>Tarama bittiğinde herhangi bir sorun olup olmadığı ve nasıl hareket edileceği konusunda bilgilendirileceğiz. Kullanmakta olduğmuz NVDA sürümü ile uyumsuz ve hasarlı olan eklentiler listeye dahil edilmez.  </p>
+<p>Tarama işlemi tamamlandıktan sonra, açılan uyarı mesajını Kabul et butonuna basarak kapatırsak, belirttiğimiz dizindeki sorunsuz eklentiler adları ile listeye eklenecektir.  </p>
+<p>Listeye, ALT+L ile de erişebilir ve istedeğimiz kadar eklentiyi boşluk çubuğu ile seçebiliriz.  </p>
+<p>Seçme işlemini tamamladıktan sonra sekme tuşuna basarsak seç butonu gelir. Eklenti paketleyici alanında olduğu gibi aynı işleve sahiptir.  </p>
+<p>Eğer tekrar Tab tuşuna basarsak, Yükle butonu gelir. ALT+Y ile de hızlıca erişebiliriz.  </p>
+<p>Seçtiğimiz en az bir veya daha fazla eklenti, NVDA'nın kullandığı klasik eklenti kurma penceresini göstermeden daha hızlı şekilde kurulacaktır.  </p>
+<p>Bu alanda da sadece uyumlu eklentilerin kurulabildiğini ve size sorun yaşatmayacağını belirtmeliyiz.  </p>
+<p>Yükle butonuna basıldığı anda, Eklenti sürecin belirtildiği kutuya odaklanacaktır.  </p>
+<p>Ayrıca süreç bittiğinde: yüklenen, kurulamayan ve varsa hataların bizlere bildirildiği bir pencere açılır.  </p>
+<p>Pencerede verilen sonuçlara bağlı olarak: Kapat butonunun yanı sıra, Kabul et veya İptal düğmeleri de bulunabilir.  </p>
+<p>Kabul et düğmesi etkinleştirilirse, Yüklenen eklentilerin ve yapılan değişikliklerin etkin olabilmesi için NVDA yeniden başlatılır.  </p>
+<p>Kabul etmez ve kapatırsak, NVDA'yı yeniden başlatana kadar eklentiyi tekrar kullanamayacağız, bu yinelenen eylemleri önlemek için bir korumadır.  </p>
+<p>Aksi takdirde hatalar varsa ve yalnızca iptal düğmesi sunulursa, başka şeyler yapmak için ona basabilir ve arayüze dönebiliriz.  </p>
+<h3>UYARI:</h3>
+<p>Bu kategori, eklentilerin kurulumunu kolaylaştırmak için uygulanmaktadır, ancak yanlış eklentiler yüklenerek  kullanılması okuyucunun performansının düşmesine neden olabilir. Doğru şekilde kullanmak kullanıcının sorumluluğundadır.  </p>
+<h2>Eklentileri Kaldır:</h2>
+<p>Bu kategori, eklentileri hızlı ve tek bir hareketle kaldırmamıza olanak tanır.  </p>
+<p>Yüklü eklentilerin gösterildiği listeden dilediğimiz eklentiyi boşluk çubuğu ile seçebiliriz. Listeye: ALT+L ile de erişebiliriz.  </p>
+<p>Yine, diğer kategorilerde de olduğu gibi ALT+S ile de erişebildiğimiz Seç butonu bulunur.  </p>
+<p>ALT+R ile de hızlıca erişebileceğimiz kaldır düğmesine bastığımızda, seçtiğimiz eklentilerin kaldırılma süreci başlar ve yine aşamaların verildiği bilgi kutusuna odaklanırız.  </p>
+<p>Ayrıca ilerleme çubuğu aracılığıyla bilgilendirileceğiz.  </p>
+<p>İşlem tamamlandıktan sonra, yine bilgilendirileceğiz. Kabul Et butonuna basarsak NVDA yeniden başlar. Bir hata varsa da Kapat veya İptal düğmelerini kullanabiliriz.  </p>
+<p>Bu kategoride de kapat butonu ile pencereyi kapatırsak, NVDA programını yeniden başlatana kadar eklentiyi kullanamayacağımızı unutmamalıyız.  </p>
+<h2>Uyarı!</h2>
+<p>Kaldır butonuna basmadan önce, kaldırmak istediğiniz eklentilerin paketlerine erişebileceğinizden, gerektiğinde yeniden kurabileceğinizden ve paketlere erişim bilgilerinin silinecek dizinde olmadığından emin olmalısınız. Nitekim, kaldırma işlemi geri alınamaz.  </p>
+<p>Bu genellikle iyi bir uygulama değildir ve NVDA, eklentilerin bilgileri eklentinin aynı dizininde tutmasını önermez, ancak bu zaten eklenti programcısının bir kararıdır.  </p>
+<p>Bu nedenle, bu kategoriyi sizin sorumluluğunuzda kullanmak için kendimi tekrar ediyorum.  </p>
+<h2>Eklentileri etkinleştir/devre dışı bırak:</h2>
+<p>Bu kategori, Eklentilerimizi etkinleştirmemize veya toplu olarak devre dışı bırakmamıza izin verecektir.  </p>
+<p>(Alt+L) ile hızlı bir şekilde erişebileceğimiz eklentiler listesinde devre dışı bırakmak istediğimiz eklentileri boşluk çubuğu ile işaretleyebiliriz.  </p>
+<p>Eğer daha önceden devre dışı bırakılmış eklentiler varsa, "Devre dışı eklentilerin listesi adlı bir liste daha bulunur. Bu listeler arasında ALT+L ile hızlıca geçiş yapılabilir. Bir eklentiyi etkinleştirmek istersek, yine boşluk çubuğu ile işaretleyebiliriz.  </p>
+<p>Etkinler listesinde işaretlenen eklentileri devre dışı bırakarak, devre dışı listesinde işaretlenen eklentileri etkinleştirerek işlemin ters yapılacağını göz önünde bulundurarak iki listede eklentileri işaretleyebiliriz.  </p>
+<p>Bu kategoride de bir Seç düğmesi bulunur. Lakin, devre dışı bırakılmış eklenti bulunuyorsa, Etkin eklentiler ve Devre dışı eklentiler şeklinde iki seçenek ve alt menüleri bulunacaktır.  </p>
+<p>Sekme veya ALT+U ile erişebileceğimiz Uygula butonuna bastığımızda yine salt okunur bir bilgi kutusu açılırve aşamaları takip edebiliriz.  </p>
+<p>Eylem bittiğinde, önceki kategorilerde olduğu gibi ilgili düğmelerin bildirilmesi ve etkinleştirilmesi gerçekleşecektir.</p>
+<p>Eylem tatmin ediciyse ve yeniden başlatmazsak, NVDA yeniden başlatılana kadar eklentinin kullanılmayacağını tekrar hatırlatıyorum.  </p>
+<h2>Manifest değiştirici:</h2>
+<p>Bu kategoride Manifest dosyasını değiştirebilir ve böylece eklentileri NVDA'nın gerektirdiği API ile uyumlu hale getirebiliriz. Manifest dosyasını, yüklü olan eklenti için veya .Add-on uzantısına sahip kurulu olmayan eklenti için değiştirebiliriz.  </p>
+<p>Artık en son NVDA politikasına ve hatta yeni değişikliklere göre, NVDA programcılarının her yıl ilk sürümünde, NVDA sürümüyle kendi Manifest dosyalarını eşleştirmek için sürümü değiştirmeleri gerekecek.  </p>
+<p>Bunu hemen yapacak programcılar olacak, diğerleri geç kalacak ve sadece takviyeleri bırakmak veya herhangi bir nedenle bunu yapmayacak olanlar olacak.  </p>
+<p>Bu son durumda, lastTestedNVDAVersion özelliğinin değişikliğini elle yapmalıyız ve çok sayıda eklentimiz varsa, zaman kaybetmek zorunda kalacağız. Ayrıca birçok kişi kullanıcı seviyesi olduğu için bu tüm kullanıcılar için bir görev değildir.  </p>
+<p>Ayrıca, betaları ve RC'leri test etmek istiyorsak, Manifest dosyalarında bu parametreyi değiştirmemiz gerekecek, aksi takdirde eklentiyi yükleyemeyeceğiz.  </p>
+<p>NVDA sürekli gelişen bir okuyucudur ve pek çok kez geliştirme eksikliği ve bunları NVDA'nın evriminde getirdiği değişikliklere adapte edememe nedeniyle yolda kalan eklentiler vardır.  </p>
+<p>Bu, Manifest'lerdeki tarihin değiştirilmesinin, güncellenmemiş eklentileri kullanmaya devam etmek için anlık bir sorunu çözdüğü veya geliştiricinin bunları güncellemeyi geciktirdiği anlamına Manifest dosyalarındaki tarih değişikliği, geliştirici güncellemeleri geciktirdiğinde geçici bir çözüm olacaktır. Tarih değişikliğinin işe yaramadığı ve kod uyumsuzluğu yaşanan durumlarda geliştirici ile iletişime geçmek gerektiği unutulmamalıdır.  </p>
+<p>Bu yardımcı araç ile, Manifest dosyalarını değiştirsek de, geliştirici bir güncelleme sunduğunda mutlaka güncellemenin yüklenmesi gerekir. Verilen güncellemede Manifest dosyasındaki uyum haricinde başka geliştirmeler de yapılmış olabilir.  </p>
+<p>Bu kategoriye eriştiğimizde, API sürümüyle birlikte yüklediğimiz tüm eklentileri içeren listeye gireceğiz. (Alt+L) ile hızlı bir şekilde erişebilir, manifestini değiştirmek istediğimiz eklentileri üzerlerine tıklayarak ve istediğimiz kadar seçebiliriz.  </p>
+<p>Sekme tuşuna bastığımızda sırasıyla üç seçim kutusuna erişiriz:  </p>
+<ul>
+<li>Ana sürümü seç: Bu seçim kutusundaki tarih kullanılan NVDA sürümü ile aynı olmalı.</li>
+<li>Ara sürümü seç: Burada 1'de bırakmak yeterlidir ancak yılda dört ara sürüm çıkarıldığı düşünüldüğünde 4 olarak seçilmesi daha uygun olabilir.</li>
+<li>Düzeltme sürümü seç: Bu kutuda 0 bırakmak yeterli, ancak yine de 9'a kadar seçenek sundum.</li>
+</ul>
+<p>Sekme tuşuna basarsak, listedeki tüm eklentileri seçmemize veya seçimini kaldırmamıza izin verecek bir seçim butonumuz var.  </p>
+<p>Eğer tab tuşuna bir defa daha basarsak, Uygula butonuna erişiriz. Yine ALT+U kısayolunu kullanabiliriz.  </p>
+<p>Bu düğmeye basarsak, aşağıdaki seçeneklerin bulunduğu bir menü görüntülenecektir:</p>
+<ul>
+<li>Dosyaya uygula: Yaptığımız değişiklikleri listeden seçtiğimiz ve kurulu olan eklentinin manifest dosyasına uygular.</li>
+<li>Eklenti paketine uygula: Yaptığımız değişiklikleri, kurulu olmayan ve .nvda-addon uzantısına sahip dosyaya uygular.</li>
+</ul>
+<p>Eğer değişiklikleri bir eklenti paketine uygularsak: eklentiyi seçtiğimiz dizinde aynı adla bir eklenti paketi oluşturulacak. Ancak güvenlik nedeni ile sonuna: "_gen_modify_manifest" ibaresi de eklenecektir.  </p>
+<p>Seçeneklerden herhangi biri ile odak tek okuma kutusuna bırakılacak ve ne olduğu konusunda bilgilendirileceğiz.  </p>
+<p>Davranış, kabul etme ve iptal etme düğmeleriyle önceki kategorilerdekiyle aynı olacaktır.  </p>
+<p>Daha önce bir eklenti dosyası seçersek, dosyaya uygulamak için daha büyük, daha küçük ve revizyonun birleştirilmiş çerçevelerini değiştirmemiz gerektiğinde, manifeste bu yapılandırmayı seçtiğimizi hatırlıyorum.  </p>
+<h2>Uyarı!</h2>
+<p>Bu yardımcı programın kullanımı ve sonuçları münhasıran son kullanıcının sorumluluğundadır.  </p>
+<h2>Eklenti belgeleri:</h2>
+<p>Bu kategoriyi belgelere erişim sorunu yaşayan kullanıcılar olduğunu gördüğüm için oluşturdum. Eklentilerin nasıl kullanılacağını öğrenebilmek için geliştiricinin sunduğu belgeleri okumalısınız.  </p>
+<p>Bu kategoride, herhangi bir nedenle belgesi olmayanlar hariç, belgeleri olan tüm eklentilerin görüntüleneceği bir liste bulacağız. Yine ALT+L ile liste alanına hızlıca erişebiliriz.  </p>
+<p>Eğer bir defa sekme tuşuna basarsak, listeden seçtiğimiz eklentinin belgesini varsayılan tarayıcımızda açabileceğimiz Eklenti belgesini Aç butonu gelir. ALT+A ile de etkinleştirebiliriz.  </p>
+<h1>Çevirmenler ve ortak çalışanlar:</h1>
+<p>Birisi çevirilerle işbirliği yapmak isterse, bunu Github eklenti deposu aracılığıyla veya <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#120;&#101;&#98;&#111;&#108;&#97;&#120;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;">&#120;&#101;&#98;&#111;&#108;&#97;&#120;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a> adresine e-posta göndererek yapabilir.  </p>
+<ul>
+<li>İngilizce: Dragan Ratkovich (otomatik çeviri belgeleri)</li>
+<li>Türkçe: Umut KORKMAZ</li>
+<li>Fransızca: Rémy Ruiz</li>
+<li>Arapça: Wafiq Taher</li>
+<li>Almanca: Moritz Wolfart</li>
+<li>Rusça: Valentin Kupriyanov (NVDA.RU Rus topluluğu)</li>
+<li>İtalyanca: Leonardo Marenda</li>
+<li>Ukraynaca: Vova Mobile</li>
+</ul>
+<h1>Değişiklik Günlüğü:</h1>
+<h2>Güncelleme bilgileri:</h2>
+<p>Bu eklenti aşağıdaki yükseltme yolunu izleyecektir:  </p>
+<p>Bu kayıtta yalnızca daha büyük boyutlu sürümler (ör. v3.1) listelenir.  </p>
+<p>Daha büyük type.menor.x sürümleri (ör. v3.1.2) çeviri güncellemeleridir.  </p>
+<p>Eklentideki değişiklikler, en son gelişmelerin açıklandığı bu bölüme yansıtılacaktır.  </p>
+<p>Ana belge, kullanıcı için bir yönlendirme olarak değiştirilmeyecektir.  </p>
+<p>Değişikliklerden haberdar olmak için bu bölümü incelemek kullanıcının sorumluluğundadır.  </p>
+<h2>Sürüm 1.1.:</h2>
+<ul>
+<li>Hatalar düzeltildi.</li>
+<li>Yedekleme yapma ve Yedeği geri yükleme özelliği eklendi.</li>
+</ul>
+<p>Artık, Yedekleme yap / Yedeği geri yükle adlı bir bölümümüz olacak.  </p>
+<p>Bu bölüm bir liste halinde yedekleme yapabileceğimiz seçenekleri gösterecektir.  </p>
+<p>Bu sürümde bir yedeklemeye kaydedilebilecek seçenekler şunlardır:</p>
+<ul>
+<li>Sözlükler Dizini (\speechDicts)</li>
+<li>Profiller Dizini (\profiles)</li>
+<li>Scratchpad dizini (\scratchpad)</li>
+<li>Profil tetikleyici yapılandırma dosyası (profileTriggers.ini)</li>
+<li>Girdi hareketleri yapılandırma dosyası (gestures.ini)</li>
+<li>NVDA yapılandırma dosyası (nvda.ini)</li>
+</ul>
+<p>Yalnızca NVDA kopyamızda bulunan öğeler ve içeriği olan dizinler listede gösterilecektir.  </p>
+<p>Örneğin, profiller dizini boşsa, yedeklemeye izin vermez.  </p>
+<p>Yedekleme yapabilmek için listeden en az bir öğe seçmemiz gerekir.  </p>
+<p>Sekme tuşuna bastığımızda iki adet buton ile karşılaşırız:  </p>
+<ul>
+<li>yedek oluştur:
+Bu düğmeye basarsak, klasik bir Windows kaydetme penceresi açılır, yedeğimizin adını ve nereye kaydetmek istediğimizi sorar.<br />
+Kaydet'e bastığımızda yedekleme başlayacak ve salt okunur durum kutusunda her şey yolunda gittiyse veya hatalar varsa sonucu bize bildirecektir.</li>
+<li>Yedeği geri yükle:
+Bu düğmeye bastığımızda, bir yedekleme dosyasını açmak için klasik bir Windows penceresi açılacak, kopyayı kaydettiğimiz yeri bulmamız ve açmamız gerekecek.<br />
+Dosya açıldığında, yedeklemenin içeriğini içeren bir pencere gösterilecektir, bu pencerede geri yüklemek istediğimiz öğeleri seçmek için bir liste görünecektir.<br />
+İstediğimiz zaman geri yükle'ye basıyoruz ve durum kutusunda geri yükleme işleminin doğru olup olmadığını veya bir sorun olup olmadığını bize bildirecek.<br />
+UYARI:
+Bir NVDA öğesini geri yüklediğimizde, NVDA'yı yeniden başlatmamız gerekecek, bu nedenle NVDA Eklentileri için Yardımcı araçlarda yaptığımız herhangi bir işlem NVDA'nın yeniden başlatılmasıyla sonuçlanacak. Kabul et, iptal et, kapat, çık veya Alt+F4 tuşlarına basıyoruz.
+Geri yüklenmesi için birden çok öğe seçilirse ve sadece birisi yüklenebilirse, Eklenti hata oluştuğunu bildirir ve NVDA'yı yeniden başlatır.</li>
+</ul>
+<h2>Sürüm 1.0:</h2>
+<p>♪ İlk Sürüm.  </p>
+<p>Yeni işlevlerin dahil edilmesiyle birlikte eski Eklenti Paketleyici sıfırdan yeniden yazılacaktır.  </p>
+<p>Eklenti, NVDA eklentileri için yardımcı araçlar adını alır. Ancak, NVDA dahili olarak (addonPackager) adını kullanmaya devam eder.  </p>
+<p>Bu eklentide, Manifest değiştirici bulunduğundan. CriCriCri eklentisi artık bakım almayacaktır.  </p>
+</body>
+</html>

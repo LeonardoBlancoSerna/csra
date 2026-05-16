@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../style.css" media="screen">
+<title>Tony's enhancements 1.22.3</title>
+</head>
+<body>
+<h1>Tony's enhancements</h1>
+<p>Цей додаток містить низку невеликих поліпшень екранного читача NVDA, кожне з
+яких є занадто малим, щоб заслуговувати на окремий додаток.</p>
+<p>This add-on is compatible with NVDA version 2024.2 or later</p>
+<h2>Downloads</h2>
+<p>Please install the latest version from NVDA add-on store.</p>
+<h2>Поліпшені команди навігації у таблиці</h2>
+<ul>
+<li>NVDA+Control+цифра – перейти до першого/другого/третього/десятого
+  стовпчика таблиці.</li>
+<li>NVDA+Alt+цифра – перейти до першого/другого/третього/десятого рядка
+  таблиці.</li>
+</ul>
+<h2>Копіювання таблиць у буфер обміну</h2>
+<p>За допомогою наведених нижче комбінацій клавіш ви можете скопіювати або всю
+таблицю, або поточний рядок, або поточний стовпець у відформатованому
+вигляді, щоб потім вставити його як таблицю в текстові редактори, такі як
+Microsoft Word або WordPad.</p>
+<ul>
+<li>NVDA+Alt+T — показує спливаюче меню з параметрами копіювання таблиці або
+  її частини.</li>
+</ul>
+<p>There are also separate scripts for copying tables, rows, columns and cells,
+but they don't have keyboard shortcuts assigned by default, custom keyboard
+shortcuts cfor them can be assigned in InputGestures dialog of NVDA.</p>
+<h2>Автоматичне перемикання мов</h2>
+<p>Дозволяє автоматично перемикати мову вашого синтезатора за набором
+символів. Регулярний вираз для кожної мови можна налаштувати у діалозі
+налаштувань додатка. Будь ласка, переконайтеся, що ваш синтезатор підтримує
+всі мови, які вас цікавлять. Перемикання між двома мовами на основі латиниці
+або двома мовами зі схожими наборами символів наразі не підтримується.</p>
+<h2>Команди швидкого пошуку</h2>
+<p>As of version v1.18, QuickSearch commands have been moved to <a href="https://github.com/mltony/nvda-indent-nav">IndentNav
+add-on</a>.</p>
+<h2>Приглушення промовляння NVDA небажаної фрази «не виділено»</h2>
+<p>Уявімо, що ви виділили якийсь текст у текстовому редакторі. Потім ви
+натискаєте клавішу, наприклад, «на початок» або «стрілка вгору», яка має
+перенести вас до іншої частини документа. NVDA промовить «не виділено», а
+потім промовить попереднє виділення, що іноді може бути незручно. Ця функція
+запобігає тому, щоб NVDA озвучувала раніше виділений текст у подібних
+ситуаціях.</p>
+<h2>Динамічні комбінації клавіш</h2>
+<p>Ви можете призначити деякі команди як динамічні. Після виконання такої
+команди NVDA відстежуватиме активне вікно на будь-які оновлення і, якщо
+рядок був оновлений, NVDA автоматично його промовить. Наприклад, як
+динамічні можуть бути позначені деякі команди в текстовому редакторі, як-от
+перехід на закладку, перехід на інший рядок та команди налагодження, такі як
+step into/step over.</p>
+<p>Формат таблиці динамічних команд – простий: кожен рядок містить правило в
+такому форматі:
+<code>appName keystroke</code>
+де <code>appName</code> – ім’я програми, в якій команда позначена як динамічна, або <code>*</code>
+для позначення команди як динамічної в усіх програмах, а keystroke – команда
+у форматі NVDA, наприклад: <code>control+alt+shift+сторінка вниз</code>.</p>
+<p>Щоб визначити appName для вашої програми, виконайте такі дії:</p>
+<ol>
+<li>Перейдіть до своєї програми.</li>
+<li>
+<ol>
+<li>Відкрийте Консоль Python nvda, натиснувши комбінацію клавіш
+   NVDA+Shift+Z.</li>
+</ol>
+</li>
+<li>Введіть focus.appModule.appName і натисніть enter.</li>
+<li>Натисніть F6, щоб перейти до панелі виведення та знайти значення appName
+   в останньому рядку.</li>
+</ol>
+<h2>Показ і приховування вікон</h2>
+<p>As of version v1.18 show/hide commands have been moved to <a href="https://github.com/mltony/nvda-task-switcher">Task Switcher
+add-on</a>.</p>
+<h2>Сигнал, коли NVDA зайнята</h2>
+<p>Позначте цей параметр, щоб отримувати звуковий зворотний зв’язок, коли NVDA
+зайнята. Зайнятість NVDA не обов’язково означає проблему з нею. Це радше
+сигнал для користувача, що певні команди NVDA будуть виконані не відразу.</p>
+<h2>Application Volume adjustment</h2>
+<p>This functionality has been merged into NVDA core and is available in NVDA
+v2024.3 or later.</p>
+<h2>Mute microphone</h2>
+<p>This add-on provides a command for switching the microphone. There is no
+gesture assigned to this command by default, you can assign a gesture in
+NVDA's "Input Gestures" dialog if needed.</p>
+<h2>Розділення звуку</h2>
+<p>This functionality has been merged into NVDA core and is available in NVDA
+v2024.2 or later.</p>
+<h2>Покращені функції миші</h2>
+<ul>
+<li>Alt+додатковий знак ділення: наводить курсор миші на поточний об’єкт і
+  натискає його.</li>
+<li>Alt+додатковий знак множення: наводить курсор миші на поточний об’єкт і
+  натискає на ньому правою кнопкою миші.</li>
+<li>Alt+додатковий деліт: переміщає курсор миші у верхній лівий кут екрана. Це
+  може бути корисним для запобігання небажаному наведенню курсора на вікна в
+  певних програмах.</li>
+</ul>
+<p>The functionality for mouse wheel scrolling has been merged into NVDA core
+and is available in NVDA v2024.3 or later.</p>
+<h2>Виявлення режиму вставки у текстових редакторах</h2>
+<p>Якщо цей параметр увімкнено, NVDA подаватиме звуковий сигнал, коли виявить
+режим вставки в текстових редакторах.</p>
+<h2>Блокувати подвійний Insert</h2>
+<p>При використанні NVDA подвійне натискання клавіші insert вмикає в деяких
+програмах режим вставки. Причому іноді це відбувається раптово. Оскільки це
+спеціальна команда, то її не можна вимкнути у налаштуваннях. Однак цей
+додаток надає можливість заблокувати цю комбінацію клавіш. Коли подвійний
+insert заблоковано, режим вставки і надалі можна вмикати натисканням NVDA+F2
+і потім insert.</p>
+<p>Цей параметр початково вимкнено, його можна увімкнути в налаштуваннях.</p>
+<h2>Blocking double Caps Lock keystroke</h2>
+<p>In NVDA, when Caps Lock is set as an NVDA key, pressing it twice in a row
+toggles between uppercase and lowercase input modes. However, this can
+sometimes cause unintentional switching between these modes. Since this
+key’s behavior is unique and cannot be disabled through settings, this
+add-on offers a method to block this specific keyboard shortcut. When the
+double Caps Lock key press is blocked, you can still switch between
+uppercase and lowercase input modes by pressing NVDA+F2 followed by the Caps
+Lock key.</p>
+<p>Цей параметр початково вимкнено, його можна увімкнути в налаштуваннях.</p>
+<h2>Системний пріоритет процесу NVDA</h2>
+<p>Це дозволяє підвищити системний пріоритет процесу NVDA, що може покращити
+швидкість відгуку NVDA, особливо при високому навантаженні на процесор.</p>
+<h2>Виправлено помилку, коли фокус застрягав на панелі завдань при натисканні комбінації клавіш Windows+Цифри</h2>
+<p>This feature has been removed as of version v1.18. If you need a more
+reliable task switching functionality, please consider using <a href="https://github.com/mltony/nvda-task-switcher">Task Switcher
+add-on</a>.</p>
+<p>[[!tag dev stable]]</p>
+</body>
+</html>
