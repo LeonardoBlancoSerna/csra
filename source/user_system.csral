@@ -1,0 +1,23 @@
+name: "Sistema de Bienvenida"
+version: "Alfa Inicial"
+
+# Lógica que se ejecuta al encender el lector
+on startup:
+    play_sound "bienvenida.wav"
+    speak "Iniciando sistema de perfiles CSRA"
+    
+    # Lanzar la interfaz que acabamos de crear
+    show_ui "login.html"
+    
+    speak "Por favor, completa tus datos en la pantalla de inicio"
+
+# Comandos para verificar el estado del usuario una vez dentro
+on key "control+alt+u":
+    speak "Verificando perfil actual"
+    # El motor leerá los datos guardados por el HTML
+    speak f"Bienvenido de nuevo, el sistema está optimizado para tu perfil"
+
+on key "control+alt+m":
+    # Ejemplo de ajuste para matemáticas según perfil
+    speak "Ajustando motor de matemáticas"
+    speak "Modo de lectura Nemeth activado para usuario sin visión"

@@ -98,6 +98,16 @@ jobs:
     - name: Build CSRA ART Rust Core
       run: |
         cd source/csra_art_rust
+        cargo build --release
+    - name: Compile CSRA-L Scripts
+      run: |
+        python source/csrac.py
+    - name: Package CSRA-L Assets
+      run: |
+        # Asegurar que el binario y el HTML se incluyan en el empaquetado
+        cp test.csrax source/
+        cp source/login.html source/
+
         cargo build --release --target i686-pc-windows-msvc
         cp target/i686-pc-windows-msvc/release/csra_art_rust.dll ../csra_art_rust.dll
     - name: Build nvdaHelper Rust Core
